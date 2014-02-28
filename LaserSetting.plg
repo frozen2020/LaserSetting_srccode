@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LaserSetting - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Admin\LOCALS~1\Temp\RSPA98.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/LaserSetting.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\tang\LaserSetting_srccode_rev2\LaserSetting.cpp"
+"E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Admin\LOCALS~1\Temp\RSPA98.tmp" 
+Creating temporary file "C:\DOCUME~1\Admin\LOCALS~1\Temp\RSPA99.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/LaserSetting.pdb" /machine:I386 /out:"Release/LaserSetting.exe" 
+.\Release\ComConfigDlg.obj
+.\Release\DelphilaserComCommunicate.obj
+.\Release\LaserSetting.obj
+.\Release\LaserSettingDlg.obj
+.\Release\StdAfx.obj
+.\Release\LaserSetting.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Admin\LOCALS~1\Temp\RSPA99.tmp"
+<h3>Output Window</h3>
+Compiling...
+LaserSetting.cpp
+LaserSettingDlg.cpp
+E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp(325) : warning C4018: '==' : signed/unsigned mismatch
+E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp(674) : warning C4244: '=' : conversion from 'long' to 'float', possible loss of data
+E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp(690) : warning C4244: '=' : conversion from 'long' to 'float', possible loss of data
+E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp(792) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+E:\tang\LaserSetting_srccode_rev2\LaserSettingDlg.cpp(793) : warning C4244: 'argument' : conversion from 'float' to 'unsigned long', possible loss of data
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/LaserSetting.bsc"  .\Release\StdAfx.sbr .\Release\ComConfigDlg.sbr .\Release\DelphilaserComCommunicate.sbr .\Release\LaserSetting.sbr .\Release\LaserSettingDlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+LaserSetting.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

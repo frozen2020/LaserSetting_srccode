@@ -1,0 +1,609 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AFX_COMCONFIGDLG_H__FE0C8339_2C9E_4404_98E5_CCF8CB685B17__INCLUDED_	.\ComConfigDlg.h	2;"	d
+AFX_LASERSETTINGDLG_H__B12CFA51_608C_4C06_95A1_911B0EA9A85A__INCLUDED_	.\LaserSettingDlg.h	5;"	d
+AFX_LASERSETTING_H__793C87D9_EB0A_4BAB_BDC0_6211D4D21A6B__INCLUDED_	.\LaserSetting.h	5;"	d
+AFX_STDAFX_H__3E353627_609D_4497_BFAA_3A033552417C__INCLUDED_	.\StdAfx.h	7;"	d
+BeginThread	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::BeginThread()$/;"	f	class:CDelphilaserComCommunicate
+BindCommPort	.\DelphilaserComCommunicate.cpp	/^void CDelphilaserComCommunicate::BindCommPort(DWORD dwPort)$/;"	f	class:CDelphilaserComCommunicate
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CAboutDlg	.\LaserSettingDlg.cpp	/^CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)$/;"	f	class:CAboutDlg
+CAboutDlg	.\LaserSettingDlg.cpp	/^class CAboutDlg : public CDialog$/;"	c	file:
+CComConfigDlg	.\ComConfigDlg.cpp	/^CComConfigDlg::CComConfigDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CComConfigDlg
+CComConfigDlg	.\ComConfigDlg.h	/^class CComConfigDlg : public CDialog$/;"	c
+CDelphilaserComCommunicate	.\DelphilaserComCommunicate.cpp	/^CDelphilaserComCommunicate::CDelphilaserComCommunicate()$/;"	f	class:CDelphilaserComCommunicate
+CDelphilaserComCommunicate	.\DelphilaserComCommunicate.h	/^class CDelphilaserComCommunicate  $/;"	c
+CLaserSettingApp	.\LaserSetting.cpp	/^CLaserSettingApp::CLaserSettingApp()$/;"	f	class:CLaserSettingApp
+CLaserSettingApp	.\LaserSetting.h	/^class CLaserSettingApp : public CWinApp$/;"	c
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg.cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
+CLaserSettingDlg	.\LaserSettingDlg.h	/^class CLaserSettingDlg : public CDialog$/;"	c
+CManualResetEvent	.\StdAfx.cpp	/^CManualResetEvent::CManualResetEvent()$/;"	f	class:CManualResetEvent
+CManualResetEvent	.\StdAfx.h	/^class CManualResetEvent $/;"	c
+COMCONFIG	.\StdAfx.h	/^}COMCONFIG;$/;"	t	typeref:struct:_tagComConfig
+ClearInputBuffer	.\DelphilaserComCommunicate.h	/^	void ClearInputBuffer()$/;"	f	class:CDelphilaserComCommunicate
+ClearOutputBuffer	.\DelphilaserComCommunicate.h	/^	void ClearOutputBuffer()$/;"	f	class:CDelphilaserComCommunicate
+Close	.\DelphilaserComCommunicate.cpp	/^void CDelphilaserComCommunicate::Close()$/;"	f	class:CDelphilaserComCommunicate
+CommThreadProc	.\DelphilaserComCommunicate.h	/^	static UINT APIENTRY CommThreadProc(LPVOID lpPara)$/;"	f	class:CDelphilaserComCommunicate
+Create	.\StdAfx.cpp	/^bool CManualResetEvent::Create(TCHAR *f_pName)$/;"	f	class:CManualResetEvent
+DECLSKINHAPI	.\Release\SkinH.h	21;"	d
+DECLSKINHAPI	.\SkinH.h	21;"	d
+DECLSKINHAPI	.\lasersetting\SkinH.h	21;"	d
+DEFAULT_COM_MASK_EVENT	.\DelphilaserComCommunicate.h	44;"	d
+Destroy	.\DelphilaserComCommunicate.cpp	/^void CDelphilaserComCommunicate::Destroy()$/;"	f	class:CDelphilaserComCommunicate
+DoDataExchange	.\ComConfigDlg.cpp	/^void CComConfigDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CComConfigDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+DoDataExchange	.\LaserSettingDlg.cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
+DoDataExchange	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
+EndThread	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::EndThread(DWORD dwWaitTime)$/;"	f	class:CDelphilaserComCommunicate
+GetHANDLE	.\StdAfx.cpp	/^HANDLE CManualResetEvent::GetHANDLE() const$/;"	f	class:CManualResetEvent
+GetHandle	.\DelphilaserComCommunicate.h	/^	HANDLE GetHandle()$/;"	f	class:CDelphilaserComCommunicate
+GetInputSize	.\DelphilaserComCommunicate.h	/^	int GetInputSize()$/;"	f	class:CDelphilaserComCommunicate
+GetPortID	.\DelphilaserComCommunicate.h	/^	const int GetPortID()$/;"	f	class:CDelphilaserComCommunicate
+GetPortName	.\DelphilaserComCommunicate.h	/^	const char *GetPortName()$/;"	f	class:CDelphilaserComCommunicate
+GetState	.\DelphilaserComCommunicate.h	/^	DCB *GetState()$/;"	f	class:CDelphilaserComCommunicate
+GetThread	.\DelphilaserComCommunicate.h	/^	inline HANDLE GetThread()$/;"	f	class:CDelphilaserComCommunicate
+GetTimeouts	.\DelphilaserComCommunicate.h	/^	LPCOMMTIMEOUTS GetTimeouts(void)$/;"	f	class:CDelphilaserComCommunicate
+IDC_BUTTON2	.\resource.h	47;"	d
+IDC_BUTTON3	.\resource.h	49;"	d
+IDC_BUTTON_APPLY	.\resource.h	26;"	d
+IDC_BUTTON_CANCEL	.\resource.h	16;"	d
+IDC_BUTTON_COMSET	.\resource.h	14;"	d
+IDC_BUTTON_CONNECT	.\resource.h	15;"	d
+IDC_BUTTON_GET	.\resource.h	44;"	d
+IDC_BUTTON_SEND	.\resource.h	25;"	d
+IDC_CHECK2	.\resource.h	19;"	d
+IDC_CHECK3	.\resource.h	21;"	d
+IDC_CHECK4	.\resource.h	23;"	d
+IDC_CHECK_DIO	.\resource.h	11;"	d
+IDC_CHECK_EXT	.\resource.h	22;"	d
+IDC_CHECK_QS	.\resource.h	20;"	d
+IDC_CHECK_SHT	.\resource.h	24;"	d
+IDC_CLOSEDIG	.\resource.h	50;"	d
+IDC_COMBO_BAUDRATE	.\resource.h	28;"	d
+IDC_COMBO_COM	.\resource.h	13;"	d
+IDC_COMBO_DATABITS	.\resource.h	30;"	d
+IDC_COMBO_DATACONTROL	.\resource.h	36;"	d
+IDC_COMBO_PARITY	.\resource.h	32;"	d
+IDC_COMBO_STOPBITS	.\resource.h	34;"	d
+IDC_EDIT2	.\resource.h	48;"	d
+IDC_EDIT_DELAY	.\resource.h	46;"	d
+IDC_EDIT_IDI	.\resource.h	17;"	d
+IDC_EDIT_IDIVALUE	.\resource.h	29;"	d
+IDC_EDIT_PRF	.\resource.h	18;"	d
+IDC_EDIT_PRF2	.\resource.h	39;"	d
+IDC_EDIT_PWM	.\resource.h	27;"	d
+IDC_EDIT_PWM2	.\resource.h	37;"	d
+IDC_EDIT_TDI	.\resource.h	35;"	d
+IDC_EDIT_TEV	.\resource.h	31;"	d
+IDC_EDIT_TLA	.\resource.h	33;"	d
+IDC_LIST_COMMAD	.\resource.h	45;"	d
+IDC_STATIC_BAUDRATE	.\resource.h	38;"	d
+IDC_STATIC_COM	.\resource.h	12;"	d
+IDC_STATIC_DATABITS	.\resource.h	41;"	d
+IDC_STATIC_DATACONTROL	.\resource.h	43;"	d
+IDC_STATIC_PARITY	.\resource.h	40;"	d
+IDC_STATIC_STOPBITS	.\resource.h	42;"	d
+IDD	.\ComConfigDlg.h	/^	enum { IDD = IDD_DIALOG_COM };$/;"	e	enum:CComConfigDlg::__anon1
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon2	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon3	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon4	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon5	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon6	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon7	file:
+IDD	.\LaserSettingDlg.cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon8	file:
+IDD	.\LaserSettingDlg.h	/^	enum { IDD = IDD_LASERSETTING_DIALOG };$/;"	e	enum:CLaserSettingDlg::__anon9
+IDD_ABOUTBOX	.\resource.h	6;"	d
+IDD_DIALOG_COM	.\resource.h	10;"	d
+IDD_LASERSETTING_DIALOG	.\resource.h	8;"	d
+IDM_ABOUTBOX	.\resource.h	5;"	d
+IDR_MAINFRAME	.\resource.h	9;"	d
+IDS_ABOUTBOX	.\resource.h	7;"	d
+InitCom	.\DelphilaserComCommunicate.cpp	/^void CDelphilaserComCommunicate::InitCom(bool fAutoBeginThread, DWORD dwIOMode)$/;"	f	class:CDelphilaserComCommunicate
+InitInstance	.\LaserSetting.cpp	/^BOOL CLaserSettingApp::InitInstance()$/;"	f	class:CLaserSettingApp
+InnerLock	.\DelphilaserComCommunicate.h	/^	InnerLock(CDelphilaserComCommunicate* p) : ptr(p)$/;"	f	struct:InnerLock
+InnerLock	.\DelphilaserComCommunicate.h	/^struct InnerLock$/;"	s
+IsOpen	.\DelphilaserComCommunicate.h	/^	inline bool IsOpen()$/;"	f	class:CDelphilaserComCommunicate
+IsThreadRunning	.\DelphilaserComCommunicate.h	/^	inline bool IsThreadRunning()$/;"	f	class:CDelphilaserComCommunicate
+Lock	.\DelphilaserComCommunicate.h	/^	void Lock()$/;"	f	class:CDelphilaserComCommunicate
+ON_COM_BREAK	.\DelphilaserComCommunicate.h	41;"	d
+ON_COM_CTS	.\DelphilaserComCommunicate.h	37;"	d
+ON_COM_DSR	.\DelphilaserComCommunicate.h	38;"	d
+ON_COM_ERROR	.\DelphilaserComCommunicate.h	43;"	d
+ON_COM_RECEIVE	.\DelphilaserComCommunicate.h	36;"	d
+ON_COM_RING	.\DelphilaserComCommunicate.h	39;"	d
+ON_COM_RLSD	.\DelphilaserComCommunicate.h	40;"	d
+ON_COM_TXEMPTY	.\DelphilaserComCommunicate.h	42;"	d
+OnBreak	.\DelphilaserComCommunicate.h	/^	virtual void OnBreak()$/;"	f	class:CDelphilaserComCommunicate
+OnButtonApply	.\ComConfigDlg.cpp	/^void CComConfigDlg::OnButtonApply() $/;"	f	class:CComConfigDlg
+OnButtonCancel	.\ComConfigDlg.cpp	/^void CComConfigDlg::OnButtonCancel() $/;"	f	class:CComConfigDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonCancel	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonComset	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnButtonComset() $/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonConnect	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnButtonConnect()$/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonGet	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnButtonGet() $/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnButtonSend	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnButtonSend()$/;"	f	class:CLaserSettingDlg
+OnCTS	.\DelphilaserComCommunicate.h	/^	virtual void OnCTS()$/;"	f	class:CDelphilaserComCommunicate
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditIdi	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnChangeEditIdi() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPrf	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnChangeEditPrf() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnChangeEditPwm	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnChangeEditPwm() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckDio	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnCheckDio() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckExt	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnCheckExt() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckQs	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnCheckQs() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnCheckSht	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnClosedig	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnComRecv	.\LaserSettingDlg.cpp	/^LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnDSR	.\DelphilaserComCommunicate.h	/^	virtual void OnDSR()$/;"	f	class:CDelphilaserComCommunicate
+OnError	.\DelphilaserComCommunicate.h	/^	virtual void OnError()$/;"	f	class:CDelphilaserComCommunicate
+OnInitDialog	.\ComConfigDlg.cpp	/^BOOL CComConfigDlg::OnInitDialog()$/;"	f	class:CComConfigDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnInitDialog	.\LaserSettingDlg.cpp	/^BOOL CLaserSettingDlg::OnInitDialog()\/\/窗体初始化函数$/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditIdi	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnKillfocusEditIdi() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPrf	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnKillfocusEditPrf() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnKillfocusEditPwm	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnKillfocusEditPwm() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnPaint	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnPaint() $/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnQueryDragIcon	.\LaserSettingDlg.cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIcon()$/;"	f	class:CLaserSettingDlg
+OnRLSD	.\DelphilaserComCommunicate.h	/^	virtual void OnRLSD()$/;"	f	class:CDelphilaserComCommunicate
+OnReceive	.\DelphilaserComCommunicate.h	/^	virtual void OnReceive()\/\/EV_RXCHAR$/;"	f	class:CDelphilaserComCommunicate
+OnRing	.\DelphilaserComCommunicate.h	/^	virtual void OnRing()$/;"	f	class:CDelphilaserComCommunicate
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnSysCommand	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
+OnTXEmpty	.\DelphilaserComCommunicate.h	/^	virtual void OnTXEmpty()$/;"	f	class:CDelphilaserComCommunicate
+Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort)$/;"	f	class:CDelphilaserComCommunicate
+Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort, char *szSetStr)$/;"	f	class:CDelphilaserComCommunicate
+Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort,DWORD dwBaudRate)$/;"	f	class:CDelphilaserComCommunicate
+OpenCommPort	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::OpenCommPort()$/;"	f	class:CDelphilaserComCommunicate
+Pulse	.\StdAfx.cpp	/^bool CManualResetEvent::Pulse()$/;"	f	class:CManualResetEvent
+Read	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::Read(LPVOID Buffer, DWORD dwBufferLength, DWORD dwWaitTime)$/;"	f	class:CDelphilaserComCommunicate
+ReadString	.\DelphilaserComCommunicate.cpp	/^char * CDelphilaserComCommunicate::ReadString(char *szBuffer, DWORD dwBufferLength, DWORD dwWaitTime)$/;"	f	class:CDelphilaserComCommunicate
+ReadSync	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::ReadSync(LPVOID Buffer, DWORD dwBufferLength)$/;"	f	class:CDelphilaserComCommunicate
+Reset	.\StdAfx.cpp	/^bool CManualResetEvent::Reset()$/;"	f	class:CManualResetEvent
+ResumeThread	.\DelphilaserComCommunicate.h	/^	inline bool ResumeThread()$/;"	f	class:CDelphilaserComCommunicate
+SKIN_H	.\Release\SkinH.h	6;"	d
+SKIN_H	.\SkinH.h	6;"	d
+SKIN_H	.\lasersetting\SkinH.h	6;"	d
+SRET_ERROR	.\Release\SkinH.h	10;"	d
+SRET_ERROR	.\SkinH.h	10;"	d
+SRET_ERROR	.\lasersetting\SkinH.h	10;"	d
+SRET_ERROR_CREATE	.\Release\SkinH.h	13;"	d
+SRET_ERROR_CREATE	.\SkinH.h	13;"	d
+SRET_ERROR_CREATE	.\lasersetting\SkinH.h	13;"	d
+SRET_ERROR_FORMAT	.\Release\SkinH.h	14;"	d
+SRET_ERROR_FORMAT	.\SkinH.h	14;"	d
+SRET_ERROR_FORMAT	.\lasersetting\SkinH.h	14;"	d
+SRET_ERROR_INVALID	.\Release\SkinH.h	17;"	d
+SRET_ERROR_INVALID	.\SkinH.h	17;"	d
+SRET_ERROR_INVALID	.\lasersetting\SkinH.h	17;"	d
+SRET_ERROR_PARAM	.\Release\SkinH.h	12;"	d
+SRET_ERROR_PARAM	.\SkinH.h	12;"	d
+SRET_ERROR_PARAM	.\lasersetting\SkinH.h	12;"	d
+SRET_ERROR_PASSWORD	.\Release\SkinH.h	16;"	d
+SRET_ERROR_PASSWORD	.\SkinH.h	16;"	d
+SRET_ERROR_PASSWORD	.\lasersetting\SkinH.h	16;"	d
+SRET_ERROR_READ	.\Release\SkinH.h	11;"	d
+SRET_ERROR_READ	.\SkinH.h	11;"	d
+SRET_ERROR_READ	.\lasersetting\SkinH.h	11;"	d
+SRET_ERROR_VERSION	.\Release\SkinH.h	15;"	d
+SRET_ERROR_VERSION	.\SkinH.h	15;"	d
+SRET_ERROR_VERSION	.\lasersetting\SkinH.h	15;"	d
+SRET_OK	.\Release\SkinH.h	9;"	d
+SRET_OK	.\SkinH.h	9;"	d
+SRET_OK	.\lasersetting\SkinH.h	9;"	d
+ScrollToFirstVisibleMessage	.\UpgradeLog.htm	/^/;"	f
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+SendCommon	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::SendCommon(char *strCommon,int nlength)$/;"	f	class:CLaserSettingDlg
+Set	.\StdAfx.cpp	/^bool CManualResetEvent::Set()$/;"	f	class:CManualResetEvent
+SetBreak	.\DelphilaserComCommunicate.h	/^	bool SetBreak(bool OnOrOff)$/;"	f	class:CDelphilaserComCommunicate
+SetBufferSize	.\DelphilaserComCommunicate.h	/^	bool SetBufferSize(DWORD dwInputSize, DWORD dwOutputSize)$/;"	f	class:CDelphilaserComCommunicate
+SetDTR	.\DelphilaserComCommunicate.h	/^	bool SetDTR(bool OnOrOff)$/;"	f	class:CDelphilaserComCommunicate
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetListCommad	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
+SetMaskEvent	.\DelphilaserComCommunicate.h	/^	void SetMaskEvent(DWORD dwEvent = DEFAULT_COM_MASK_EVENT)$/;"	f	class:CDelphilaserComCommunicate
+SetNotifyNum	.\DelphilaserComCommunicate.h	/^	inline void SetNotifyNum(DWORD dwNum)$/;"	f	class:CDelphilaserComCommunicate
+SetRTS	.\DelphilaserComCommunicate.h	/^	bool SetRTS(bool OnOrOff)$/;"	f	class:CDelphilaserComCommunicate
+SetState	.\DelphilaserComCommunicate.h	/^	bool SetState(DCB *pdcb = NULL)$/;"	f	class:CDelphilaserComCommunicate
+SetState	.\DelphilaserComCommunicate.h	/^	bool SetState(DWORD dwBaudRate, DWORD dwByteSize = 8, DWORD dwParity = NOPARITY, DWORD dwStopBits = ONESTOPBIT)$/;"	f	class:CDelphilaserComCommunicate
+SetState	.\DelphilaserComCommunicate.h	/^	bool SetState(char *szSetStr) $/;"	f	class:CDelphilaserComCommunicate
+SetTimeouts	.\DelphilaserComCommunicate.h	/^	bool SetTimeouts(LPCOMMTIMEOUTS lpCO)$/;"	f	class:CDelphilaserComCommunicate
+SetWnd	.\DelphilaserComCommunicate.h	/^	inline void SetWnd(HWND hWnd)\/\/设置窗口接收处理消息$/;"	f	class:CDelphilaserComCommunicate
+SetupPort	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::SetupPort()$/;"	f	class:CDelphilaserComCommunicate
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+StringToLong	.\LaserSettingDlg.cpp	/^unsigned long CLaserSettingDlg::StringToLong(char *p)$/;"	f	class:CLaserSettingDlg
+SuspendThread	.\DelphilaserComCommunicate.h	/^	inline bool SuspendThread()$/;"	f	class:CDelphilaserComCommunicate
+THIS_FILE	.\ComConfigDlg.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\ComConfigDlg.cpp	10;"	d	file:
+THIS_FILE	.\LaserSetting.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSetting.cpp	10;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	14;"	d	file:
+THIS_FILE	.\LaserSettingDlg.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\LaserSettingDlg.cpp	12;"	d	file:
+TYPE_ANIMATE	.\Release\SkinH.h	148;"	d
+TYPE_ANIMATE	.\SkinH.h	148;"	d
+TYPE_ANIMATE	.\lasersetting\SkinH.h	148;"	d
+TYPE_CHECKBOX	.\Release\SkinH.h	149;"	d
+TYPE_CHECKBOX	.\SkinH.h	149;"	d
+TYPE_CHECKBOX	.\lasersetting\SkinH.h	149;"	d
+TYPE_COMBOBOX	.\Release\SkinH.h	150;"	d
+TYPE_COMBOBOX	.\SkinH.h	150;"	d
+TYPE_COMBOBOX	.\lasersetting\SkinH.h	150;"	d
+TYPE_COMBOLBOX	.\Release\SkinH.h	151;"	d
+TYPE_COMBOLBOX	.\SkinH.h	151;"	d
+TYPE_COMBOLBOX	.\lasersetting\SkinH.h	151;"	d
+TYPE_COMCTRL	.\Release\SkinH.h	181;"	d
+TYPE_COMCTRL	.\SkinH.h	181;"	d
+TYPE_COMCTRL	.\lasersetting\SkinH.h	181;"	d
+TYPE_CONTROLBAR	.\Release\SkinH.h	152;"	d
+TYPE_CONTROLBAR	.\SkinH.h	152;"	d
+TYPE_CONTROLBAR	.\lasersetting\SkinH.h	152;"	d
+TYPE_DATETIME	.\Release\SkinH.h	153;"	d
+TYPE_DATETIME	.\SkinH.h	153;"	d
+TYPE_DATETIME	.\lasersetting\SkinH.h	153;"	d
+TYPE_EDITBOX	.\Release\SkinH.h	154;"	d
+TYPE_EDITBOX	.\SkinH.h	154;"	d
+TYPE_EDITBOX	.\lasersetting\SkinH.h	154;"	d
+TYPE_GROUPBOX	.\Release\SkinH.h	155;"	d
+TYPE_GROUPBOX	.\SkinH.h	155;"	d
+TYPE_GROUPBOX	.\lasersetting\SkinH.h	155;"	d
+TYPE_HEADERCTRL	.\Release\SkinH.h	156;"	d
+TYPE_HEADERCTRL	.\SkinH.h	156;"	d
+TYPE_HEADERCTRL	.\lasersetting\SkinH.h	156;"	d
+TYPE_HOTKEY	.\Release\SkinH.h	157;"	d
+TYPE_HOTKEY	.\SkinH.h	157;"	d
+TYPE_HOTKEY	.\lasersetting\SkinH.h	157;"	d
+TYPE_IPADDRESS	.\Release\SkinH.h	158;"	d
+TYPE_IPADDRESS	.\SkinH.h	158;"	d
+TYPE_IPADDRESS	.\lasersetting\SkinH.h	158;"	d
+TYPE_LABEL	.\Release\SkinH.h	159;"	d
+TYPE_LABEL	.\SkinH.h	159;"	d
+TYPE_LABEL	.\lasersetting\SkinH.h	159;"	d
+TYPE_LISTBOX	.\Release\SkinH.h	160;"	d
+TYPE_LISTBOX	.\SkinH.h	160;"	d
+TYPE_LISTBOX	.\lasersetting\SkinH.h	160;"	d
+TYPE_LISTVIEW	.\Release\SkinH.h	161;"	d
+TYPE_LISTVIEW	.\SkinH.h	161;"	d
+TYPE_LISTVIEW	.\lasersetting\SkinH.h	161;"	d
+TYPE_MDICLIENT	.\Release\SkinH.h	162;"	d
+TYPE_MDICLIENT	.\SkinH.h	162;"	d
+TYPE_MDICLIENT	.\lasersetting\SkinH.h	162;"	d
+TYPE_MENU	.\Release\SkinH.h	163;"	d
+TYPE_MENU	.\SkinH.h	163;"	d
+TYPE_MENU	.\lasersetting\SkinH.h	163;"	d
+TYPE_MONTHCAL	.\Release\SkinH.h	164;"	d
+TYPE_MONTHCAL	.\SkinH.h	164;"	d
+TYPE_MONTHCAL	.\lasersetting\SkinH.h	164;"	d
+TYPE_PAINTCTRL	.\Release\SkinH.h	182;"	d
+TYPE_PAINTCTRL	.\SkinH.h	182;"	d
+TYPE_PAINTCTRL	.\lasersetting\SkinH.h	182;"	d
+TYPE_PICTURE	.\Release\SkinH.h	165;"	d
+TYPE_PICTURE	.\SkinH.h	165;"	d
+TYPE_PICTURE	.\lasersetting\SkinH.h	165;"	d
+TYPE_PROGRESS	.\Release\SkinH.h	166;"	d
+TYPE_PROGRESS	.\SkinH.h	166;"	d
+TYPE_PROGRESS	.\lasersetting\SkinH.h	166;"	d
+TYPE_PUSHBUTTON	.\Release\SkinH.h	167;"	d
+TYPE_PUSHBUTTON	.\SkinH.h	167;"	d
+TYPE_PUSHBUTTON	.\lasersetting\SkinH.h	167;"	d
+TYPE_RADIOBUTTON	.\Release\SkinH.h	168;"	d
+TYPE_RADIOBUTTON	.\SkinH.h	168;"	d
+TYPE_RADIOBUTTON	.\lasersetting\SkinH.h	168;"	d
+TYPE_REBAR	.\Release\SkinH.h	169;"	d
+TYPE_REBAR	.\SkinH.h	169;"	d
+TYPE_REBAR	.\lasersetting\SkinH.h	169;"	d
+TYPE_RICHEDIT	.\Release\SkinH.h	170;"	d
+TYPE_RICHEDIT	.\SkinH.h	170;"	d
+TYPE_RICHEDIT	.\lasersetting\SkinH.h	170;"	d
+TYPE_SCROLLBAR	.\Release\SkinH.h	171;"	d
+TYPE_SCROLLBAR	.\SkinH.h	171;"	d
+TYPE_SCROLLBAR	.\lasersetting\SkinH.h	171;"	d
+TYPE_SCROLLCTRL	.\Release\SkinH.h	172;"	d
+TYPE_SCROLLCTRL	.\SkinH.h	172;"	d
+TYPE_SCROLLCTRL	.\lasersetting\SkinH.h	172;"	d
+TYPE_SPINCTRL	.\Release\SkinH.h	173;"	d
+TYPE_SPINCTRL	.\SkinH.h	173;"	d
+TYPE_SPINCTRL	.\lasersetting\SkinH.h	173;"	d
+TYPE_STATUSBAR	.\Release\SkinH.h	174;"	d
+TYPE_STATUSBAR	.\SkinH.h	174;"	d
+TYPE_STATUSBAR	.\lasersetting\SkinH.h	174;"	d
+TYPE_TABCTRL	.\Release\SkinH.h	175;"	d
+TYPE_TABCTRL	.\SkinH.h	175;"	d
+TYPE_TABCTRL	.\lasersetting\SkinH.h	175;"	d
+TYPE_TOOLBAR	.\Release\SkinH.h	176;"	d
+TYPE_TOOLBAR	.\SkinH.h	176;"	d
+TYPE_TOOLBAR	.\lasersetting\SkinH.h	176;"	d
+TYPE_TOOLBARWND	.\Release\SkinH.h	177;"	d
+TYPE_TOOLBARWND	.\SkinH.h	177;"	d
+TYPE_TOOLBARWND	.\lasersetting\SkinH.h	177;"	d
+TYPE_TRACKBAR	.\Release\SkinH.h	178;"	d
+TYPE_TRACKBAR	.\SkinH.h	178;"	d
+TYPE_TRACKBAR	.\lasersetting\SkinH.h	178;"	d
+TYPE_TREEVIEW	.\Release\SkinH.h	179;"	d
+TYPE_TREEVIEW	.\SkinH.h	179;"	d
+TYPE_TREEVIEW	.\lasersetting\SkinH.h	179;"	d
+TYPE_UNKNOWN	.\Release\SkinH.h	147;"	d
+TYPE_UNKNOWN	.\SkinH.h	147;"	d
+TYPE_UNKNOWN	.\lasersetting\SkinH.h	147;"	d
+TYPE_WINDOW	.\Release\SkinH.h	180;"	d
+TYPE_WINDOW	.\SkinH.h	180;"	d
+TYPE_WINDOW	.\lasersetting\SkinH.h	180;"	d
+ThreadFunc	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::ThreadFunc()$/;"	f	class:CDelphilaserComCommunicate
+ToggleMessageVisibility	.\UpgradeLog.htm	/^/;"	f
+Unlock	.\DelphilaserComCommunicate.h	/^	void Unlock()$/;"	f	class:CDelphilaserComCommunicate
+VC_EXTRALEAN	.\StdAfx.h	13;"	d
+Wait	.\StdAfx.cpp	/^bool CManualResetEvent::Wait(DWORD timeoutMillis) const$/;"	f	class:CManualResetEvent
+Wait	.\StdAfx.cpp	/^void CManualResetEvent::Wait() const$/;"	f	class:CManualResetEvent
+WaitWithMessageLoop	.\StdAfx.cpp	/^BOOL WaitWithMessageLoop(HANDLE hEvent, int nTimeout)$/;"	f
+Write	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::Write(LPVOID Buffer, DWORD dwBufferLength)$/;"	f	class:CDelphilaserComCommunicate
+Write	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::Write(char *szBuffer, DWORD dwBufferLength, char * szFormat, ...)$/;"	f	class:CDelphilaserComCommunicate
+Write	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::Write(char *szBuffer, char * szFormat, ...)$/;"	f	class:CDelphilaserComCommunicate
+Write	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::Write(const char *szBuffer)$/;"	f	class:CDelphilaserComCommunicate
+WriteSync	.\DelphilaserComCommunicate.cpp	/^DWORD CDelphilaserComCommunicate::WriteSync(LPVOID Buffer, DWORD dwBufferLength)$/;"	f	class:CDelphilaserComCommunicate
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	18;"	d	file:
+ZERO	.\LaserSettingDlg.cpp	16;"	d	file:
+_APS_NEXT_COMMAND_VALUE	.\resource.h	57;"	d
+_APS_NEXT_CONTROL_VALUE	.\resource.h	58;"	d
+_APS_NEXT_RESOURCE_VALUE	.\resource.h	56;"	d
+_APS_NEXT_SYMED_VALUE	.\resource.h	59;"	d
+_CO	.\DelphilaserComCommunicate.h	/^	COMMTIMEOUTS _CO;     $/;"	m	class:CDelphilaserComCommunicate
+_DCB	.\DelphilaserComCommunicate.h	/^	DCB _DCB;    $/;"	m	class:CDelphilaserComCommunicate
+_Mutex	.\DelphilaserComCommunicate.h	/^	CRITICAL_SECTION _Mutex;$/;"	m	class:CDelphilaserComCommunicate
+_ReadOverlapped	.\DelphilaserComCommunicate.h	/^	OVERLAPPED _ReadOverlapped, _WriteOverlapped; $/;"	m	class:CDelphilaserComCommunicate
+_WaitOverlapped	.\DelphilaserComCommunicate.h	/^	OVERLAPPED _WaitOverlapped;		\/\/WaitCommEvent use$/;"	m	class:CDelphilaserComCommunicate
+_WriteOverlapped	.\DelphilaserComCommunicate.h	/^	OVERLAPPED _ReadOverlapped, _WriteOverlapped; $/;"	m	class:CDelphilaserComCommunicate
+_dwIOMode	.\DelphilaserComCommunicate.h	/^	DWORD _dwIOMode;  \/\/ 0\/FILE_FLAG_OVERLAPPED $/;"	m	class:CDelphilaserComCommunicate
+_dwMaskEvent	.\DelphilaserComCommunicate.h	/^	volatile DWORD _dwMaskEvent;	\/\/$/;"	m	class:CDelphilaserComCommunicate
+_dwNotifyNum	.\DelphilaserComCommunicate.h	/^	volatile DWORD _dwNotifyNum;	\/\/Receive How chars(>=_dwNotifyNum) to send message to Wnd$/;"	m	class:CDelphilaserComCommunicate
+_dwPort	.\DelphilaserComCommunicate.h	/^	volatile DWORD _dwPort;			\/\/Com Port$/;"	m	class:CDelphilaserComCommunicate
+_fAutoBeginThread	.\DelphilaserComCommunicate.h	/^	bool _fAutoBeginThread;			\/\/Open BeginThread();$/;"	m	class:CDelphilaserComCommunicate
+_fRunFlag	.\DelphilaserComCommunicate.h	/^	volatile bool _fRunFlag;		\/\/flag$/;"	m	class:CDelphilaserComCommunicate
+_hCommHandle	.\DelphilaserComCommunicate.h	/^	volatile HANDLE _hCommHandle;	\/\/Com Handle$/;"	m	class:CDelphilaserComCommunicate
+_hNotifyWnd	.\DelphilaserComCommunicate.h	/^	volatile HWND _hNotifyWnd;		\/\/Wnd$/;"	m	class:CDelphilaserComCommunicate
+_hThreadHandle	.\DelphilaserComCommunicate.h	/^	volatile HANDLE _hThreadHandle; \/\/work Thread$/;"	m	class:CDelphilaserComCommunicate
+_szCommStr	.\DelphilaserComCommunicate.h	/^	char _szCommStr[20];			\/\/Com Name:COM1$/;"	m	class:CDelphilaserComCommunicate
+_tagComConfig	.\StdAfx.h	/^typedef struct _tagComConfig$/;"	s
+linkify	.\UpgradeLog.htm	/^/;"	f
+linkifyElement	.\UpgradeLog.htm	/^/;"	f
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+longToString	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
+m_ComConfig	.\LaserSetting.cpp	/^COMCONFIG	m_ComConfig;$/;"	v
+m_ComLaser	.\LaserSettingDlg.h	/^	CDelphilaserComCommunicate		m_ComLaser;$/;"	m	class:CLaserSettingDlg
+m_ListCommad	.\LaserSettingDlg.h	/^	CListCtrl	m_ListCommad;$/;"	m	class:CLaserSettingDlg
+m_bDIOOn	.\LaserSettingDlg.h	/^	BOOL	m_bDIOOn;$/;"	m	class:CLaserSettingDlg
+m_bIDIChange	.\LaserSettingDlg.h	/^	BOOL				m_bIDIChange;$/;"	m	class:CLaserSettingDlg
+m_bPRFChange	.\LaserSettingDlg.h	/^	BOOL				m_bPRFChange;$/;"	m	class:CLaserSettingDlg
+m_bPWMChange	.\LaserSettingDlg.h	/^	BOOL				m_bPWMChange;$/;"	m	class:CLaserSettingDlg
+m_bQSEXT	.\LaserSettingDlg.h	/^	BOOL	m_bQSEXT;$/;"	m	class:CLaserSettingDlg
+m_bQSOn	.\LaserSettingDlg.h	/^	BOOL	m_bQSOn;$/;"	m	class:CLaserSettingDlg
+m_bSHTOn	.\LaserSettingDlg.h	/^	BOOL	m_bSHTOn;$/;"	m	class:CLaserSettingDlg
+m_cbBaudRate	.\ComConfigDlg.h	/^	CComboBox	m_cbBaudRate;\/\/波特率$/;"	m	class:CComConfigDlg
+m_cbCom	.\LaserSettingDlg.h	/^	CComboBox	m_cbCom;$/;"	m	class:CLaserSettingDlg
+m_cbDataBits	.\ComConfigDlg.h	/^	CComboBox	m_cbDataBits;\/\/数据位$/;"	m	class:CComConfigDlg
+m_cbDataControl	.\ComConfigDlg.h	/^	CComboBox	m_cbDataControl;$/;"	m	class:CComConfigDlg
+m_cbParity	.\ComConfigDlg.h	/^	CComboBox	m_cbParity;$/;"	m	class:CComConfigDlg
+m_cbStopbits	.\ComConfigDlg.h	/^	CComboBox	m_cbStopbits;\/\/停止位$/;"	m	class:CComConfigDlg
+m_fIDI	.\LaserSettingDlg.h	/^	float	m_fIDI;$/;"	m	class:CLaserSettingDlg
+m_fPWM	.\LaserSettingDlg.h	/^	float	m_fPWM;$/;"	m	class:CLaserSettingDlg
+m_fPWM_QUERY	.\LaserSettingDlg.h	/^	float	m_fPWM_QUERY;$/;"	m	class:CLaserSettingDlg
+m_hEvent	.\StdAfx.h	/^      HANDLE m_hEvent;$/;"	m	class:CManualResetEvent
+m_hIcon	.\LaserSettingDlg.h	/^	HICON m_hIcon;$/;"	m	class:CLaserSettingDlg
+m_lPRF	.\LaserSettingDlg.h	/^	long	m_lPRF;$/;"	m	class:CLaserSettingDlg
+m_lPRF_QUERY	.\LaserSettingDlg.h	/^	float	m_lPRF_QUERY;$/;"	m	class:CLaserSettingDlg
+m_nComIndex	.\LaserSettingDlg.h	/^	int								m_nComIndex;$/;"	m	class:CLaserSettingDlg
+m_nDelay	.\LaserSettingDlg.h	/^	UINT	m_nDelay;$/;"	m	class:CLaserSettingDlg
+m_nListCount	.\LaserSettingDlg.h	/^	UINT				m_nListCount;$/;"	m	class:CLaserSettingDlg
+m_strEventName	.\StdAfx.h	/^	  CString m_strEventName;$/;"	m	class:CManualResetEvent
+m_strReceive	.\LaserSettingDlg.h	/^	CString				m_strReceive;$/;"	m	class:CLaserSettingDlg
+m_strSend	.\LaserSettingDlg.h	/^	CString	m_strSend;$/;"	m	class:CLaserSettingDlg
+m_waitEvent	.\LaserSettingDlg.h	/^	CManualResetEvent	m_waitEvent;$/;"	m	class:CLaserSettingDlg
+new	.\ComConfigDlg.cpp	9;"	d	file:
+new	.\LaserSetting.cpp	9;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	13;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	13;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	13;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	13;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	13;"	d	file:
+new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	13;"	d	file:
+new	.\LaserSettingDlg.cpp	11;"	d	file:
+operator HANDLE	.\DelphilaserComCommunicate.h	/^	operator HANDLE()$/;"	f	class:CDelphilaserComCommunicate
+operator bool	.\DelphilaserComCommunicate.h	/^	operator bool ()$/;"	f	class:CDelphilaserComCommunicate
+ptr	.\DelphilaserComCommunicate.h	/^	CDelphilaserComCommunicate* ptr;$/;"	m	struct:InnerLock
+scrollToFirstVisibleRow	.\UpgradeLog.htm	/^/;"	f
+strBaudRate	.\StdAfx.h	/^	CString		strBaudRate;$/;"	m	struct:_tagComConfig
+strDataBits	.\StdAfx.h	/^	CString		strDataBits;$/;"	m	struct:_tagComConfig
+strDataControl	.\StdAfx.h	/^	CString		strDataControl;$/;"	m	struct:_tagComConfig
+strParity	.\StdAfx.h	/^	CString		strParity;$/;"	m	struct:_tagComConfig
+strStopbits	.\StdAfx.h	/^	CString		strStopbits;$/;"	m	struct:_tagComConfig
+theApp	.\LaserSetting.cpp	/^CLaserSettingApp theApp;$/;"	v
+toggleTableRowsByName	.\UpgradeLog.htm	/^/;"	f
+~CDelphilaserComCommunicate	.\DelphilaserComCommunicate.cpp	/^CDelphilaserComCommunicate::~CDelphilaserComCommunicate()$/;"	f	class:CDelphilaserComCommunicate
+~CManualResetEvent	.\StdAfx.cpp	/^CManualResetEvent::~CManualResetEvent()$/;"	f	class:CManualResetEvent
+~InnerLock	.\DelphilaserComCommunicate.h	/^	~InnerLock()$/;"	f	struct:InnerLock

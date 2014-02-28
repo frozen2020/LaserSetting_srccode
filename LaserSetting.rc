@@ -1,0 +1,343 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LaserSetting.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LaserSetting.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 LaserSetting"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "LaserSetting 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LASERSETTING_DIALOG DIALOGEX 0, 0, 525, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LaserSetting"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Diode",IDC_CHECK_DIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,70,72,30
+    LTEXT           "COM:",IDC_STATIC_COM,10,14,21,10
+    COMBOBOX        IDC_COMBO_COM,33,12,76,61,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON_COMSET,147,11,58,14
+    PUSHBUTTON      "Connect",IDC_BUTTON_CONNECT,269,11,58,14
+    PUSHBUTTON      "Disconnect",IDC_BUTTON_CANCEL,385,11,58,14,WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,34,525,1
+    EDITTEXT        IDC_EDIT_IDI,157,74,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PRF,158,119,46,14,ES_AUTOHSCROLL
+    CONTROL         "Q-Switch",IDC_CHECK_QS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,112,72,25
+    CONTROL         "E-Shutter",IDC_CHECK_EXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,153,76,25
+    LTEXT           "Current:",IDC_STATIC,113,76,33,8
+    LTEXT           "Amps [ 0...50 ]",IDC_STATIC,215,76,61,8
+    LTEXT           "PRF:",IDC_STATIC,117,123,17,8
+    LTEXT           "Khz [ 20...150 ]",IDC_STATIC,213,123,60,8
+    LTEXT           "PWM:",IDC_STATIC,112,166,24,8
+    EDITTEXT        IDC_EDIT_PWM,157,163,46,14,ES_AUTOHSCROLL
+    LTEXT           "%  [ 10...100]",IDC_STATIC,214,167,57,8
+    LTEXT           "LASER Temp:",IDC_STATIC,398,117,51,8
+    LTEXT           "Diode Temp:",IDC_STATIC,397,156,52,8
+    EDITTEXT        IDC_EDIT_TEV,402,77,47,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TLA,457,113,47,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TDI,457,152,47,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "SHG Temp.",IDC_STATIC,282,118,38,8
+    EDITTEXT        IDC_EDIT_PWM2,339,115,46,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PRF2,339,155,46,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "THG Temp",IDC_STATIC,282,156,36,8
+    LTEXT           "Environment Temp",IDC_STATIC,310,79,85,8
+    LTEXT           "Parameters:",IDC_STATIC,274,43,93,16
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,97,67,1,117
+    LTEXT           "Status",IDC_STATIC,37,47,52,10
+END
+
+IDD_DIALOG_COM DIALOG DISCARDABLE  0, 0, 154, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Com Config"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,25,133,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,94,133,50,14
+    RTEXT           "Baud Rate:",IDC_STATIC_BAUDRATE,14,16,41,8
+    RTEXT           "Parity:",IDC_STATIC_PARITY,26,40,29,8
+    RTEXT           "Data bits:",IDC_STATIC_DATABITS,15,64,41,8
+    RTEXT           "Stop bits:",IDC_STATIC_STOPBITS,16,88,41,8
+    RTEXT           "Data Control:",IDC_STATIC_DATACONTROL,7,112,53,8
+    COMBOBOX        IDC_COMBO_BAUDRATE,64,14,74,107,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATABITS,63,62,74,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PARITY,64,38,74,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOPBITS,64,86,74,84,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATACONTROL,64,110,74,73,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LaserSetting Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LaserSetting\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LaserSetting.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "LaserSetting 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_COM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LASERSETTING_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_COM, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_COM, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_COM, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_COM, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_COM, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    0
+END
+
+IDD_DIALOG_COM DLGINIT
+BEGIN
+    IDC_COMBO_BAUDRATE, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3332, 0x3430, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3634, 0x3830, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3239, 0x3631, 0x3030, "\000" 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_PARITY, 0x403, 5, 0
+0x7665, 0x6e65, "\000" 
+    IDC_COMBO_PARITY, 0x403, 4, 0
+0x646f, 0x0064, 
+    IDC_COMBO_PARITY, 0x403, 5, 0
+0x756e, 0x6c6c, "\000" 
+    IDC_COMBO_PARITY, 0x403, 5, 0
+0x616d, 0x6b72, "\000" 
+    IDC_COMBO_PARITY, 0x403, 6, 0
+0x7073, 0x6361, 0x0065, 
+    IDC_COMBO_STOPBITS, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_STOPBITS, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_COMBO_STOPBITS, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_DATACONTROL, 0x403, 9, 0
+0x6f58, 0x2f6e, 0x6f58, 0x6666, "\000" 
+    IDC_COMBO_DATACONTROL, 0x403, 9, 0
+0x6168, 0x6472, 0x6177, 0x6572, "\000" 
+    IDC_COMBO_DATACONTROL, 0x403, 5, 0
+0x754e, 0x6c6c, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 LaserSetting(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LaserSetting.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
