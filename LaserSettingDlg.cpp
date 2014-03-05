@@ -66,20 +66,28 @@ CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CLaserSettingDlg::IDD, pParent)
 {
 	//{{AFX_DATA_INIT(CLaserSettingDlg)
-	m_bDIOOn = FALSE;
-	m_fIDI = 0.0f;
-	m_bSHTOn = FALSE;
-	m_bQSOn = FALSE;
-	m_bQSEXT = FALSE;
-	m_nDelay = 10;
+		m_nDelay = 2;
 	m_strSend = _T("");
-	m_fPWM = 100.0f;
-	m_fPWM_QUERY = 0.0f;
-	m_lPRF_QUERY = 0.0f;
-	m_lPRF = 20;
+	m_fWPWM = 100.0f;
+	m_fRPWM = 0.0f;
+	m_lRPRF = 0.0f;
+	m_lWPRF = 20;
+	m_QS = 0;
+	m_ESH = 0;
+	m_DIO = 0;
+	m_fRSHG = 0.0f;
+	m_fRTDI = 0.0f;
+	m_fRTHG = 0.0f;
+	m_fRIDI = 0.0f;
+	m_fWIDI = 0.0f;
+	m_fWSHG = 0.0f;
+	m_fWTDI = 0.0f;
+	m_fWTHG = 0.0f;
 	//}}AFX_DATA_INIT
 	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+	m_hIconRED = AfxGetApp()->LoadIcon(IDI_ICON2);
+	m_hIconGREEN=AfxGetApp()->LoadIcon(IDI_ICON3);
 	m_ComConfig.strBaudRate = _T("9600");
 	m_ComConfig.strParity = _T("e");
 	m_ComConfig.strDataBits = _T("8");
@@ -92,24 +100,35 @@ CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent /*=NULL*/)
 	m_bPRFChange = false;
 	m_bPWMChange = false;
 	m_nListCount = 0;
+	nComIndex=0;
 }
 
 void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CLaserSettingDlg)
-//	DDX_Control(pDX, IDC_LIST_COMMAD, m_ListCommad);
-	DDX_Control(pDX, IDC_COMBO_COM, m_cbCom);
-	DDX_Check(pDX, IDC_CHECK_DIO, m_bDIOOn);
-	DDX_Text(pDX, IDC_EDIT_IDI, m_fIDI);
-//	DDX_Check(pDX, IDC_CHECK_SHT, m_bSHTOn);
-	DDX_Check(pDX, IDC_CHECK_QS, m_bQSOn);
-	DDX_Check(pDX, IDC_CHECK_EXT, m_bQSEXT);
-	DDX_Text(pDX, IDC_EDIT_PWM, m_fPWM);
-	DDX_Text(pDX, IDC_EDIT_PWM2, m_fPWM_QUERY);
-	DDX_Text(pDX, IDC_EDIT_PRF2, m_lPRF_QUERY);
-	DDX_Text(pDX, IDC_EDIT_PRF, m_lPRF);
+	DDX_Control(pDX, IDC_STATIC_QS, m_CSQS);
+	DDX_Control(pDX, IDC_STATIC_ESH, m_CSESH);
+	DDX_Control(pDX, IDC_STATIC_DIO, m_CSDIO);
+	DDX_Control(pDX, IDC_STATIC_COM, m_CSCOM);
+	DDX_Control(pDX, IDC_BUTTON_CONNECT, m_cButton);
+	DDX_Text(pDX, IDC_EDIT_WPWM, m_fWPWM);
+	DDX_Text(pDX, IDC_EDIT_RPWM, m_fRPWM);
+	DDX_Text(pDX, IDC_EDIT_RPRF, m_lRPRF);
+	DDX_Text(pDX, IDC_EDIT_WPRF, m_lWPRF);
+	DDX_CBIndex(pDX, IDC_COMBO_QS, m_QS);
+	DDX_CBIndex(pDX, IDC_COMBO_ESH, m_ESH);
+	DDX_CBIndex(pDX, IDC_COMBO_DIO, m_DIO);
+	DDX_Text(pDX, IDC_EDIT_RSHG, m_fRSHG);
+	DDX_Text(pDX, IDC_EDIT_RTDI, m_fRTDI);
+	DDX_Text(pDX, IDC_EDIT_RTHG, m_fRTHG);
+	DDX_Text(pDX, IDC_EDIT_RIDI, m_fRIDI);
+	DDX_Text(pDX, IDC_EDIT_WIDI, m_fWIDI);
+	DDX_Text(pDX, IDC_EDIT_WSHG, m_fWSHG);
+	DDX_Text(pDX, IDC_EDIT_WTDI, m_fWTDI);
+	DDX_Text(pDX, IDC_EDIT_WTHG, m_fWTHG);
 	//}}AFX_DATA_MAP
+	DDX_Control(pDX, IDC_BUTTON_CONNECT, m_cButton);
 }
 
 BEGIN_MESSAGE_MAP(CLaserSettingDlg, CDialog)
@@ -117,23 +136,19 @@ BEGIN_MESSAGE_MAP(CLaserSettingDlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_BUTTON_COMSET, OnButtonComset)
 	ON_BN_CLICKED(IDC_BUTTON_CONNECT, OnButtonConnect)
 	ON_BN_CLICKED(IDC_BUTTON_CANCEL, OnButtonCancel)
 	ON_BN_CLICKED(IDC_BUTTON_SEND, OnButtonSend)
-	ON_BN_CLICKED(IDC_CHECK_DIO, OnCheckDio)
-	ON_EN_CHANGE(IDC_EDIT_IDI, OnChangeEditIdi)
-	ON_EN_CHANGE(IDC_EDIT_PRF, OnChangeEditPrf)
-	ON_BN_CLICKED(IDC_CHECK_QS, OnCheckQs)
-	ON_BN_CLICKED(IDC_CHECK_EXT, OnCheckExt)
-	ON_BN_CLICKED(IDC_BUTTON_GET, OnButtonGet)
 	ON_EN_CHANGE(IDC_EDIT_PWM, OnChangeEditPwm)
 	ON_BN_CLICKED(IDC_CLOSEDIG, OnClosedig)
-	ON_EN_KILLFOCUS(IDC_EDIT_IDI, OnKillfocusEditIdi)
-	ON_EN_KILLFOCUS(IDC_EDIT_PRF, OnKillfocusEditPrf)
-	ON_EN_KILLFOCUS(IDC_EDIT_PWM, OnKillfocusEditPwm)
-	ON_MESSAGE(ON_COM_RECEIVE, OnComRecv)
 	ON_WM_TIMER()
+	ON_CBN_SELCHANGE(IDC_COMBO_DIO, OnSelchangeComboDio)
+	ON_CBN_SELCHANGE(IDC_COMBO_ESH, OnSelchangeComboEsh)
+	ON_CBN_SELCHANGE(IDC_COMBO_QS, OnSelchangeComboQs)
+	ON_EN_KILLFOCUS(IDC_EDIT_WIDI, OnKillfocusEditWidi)
+	ON_EN_KILLFOCUS(IDC_EDIT_WPRF, OnKillfocusEditWprf)
+	ON_EN_KILLFOCUS(IDC_EDIT_WPWM, OnKillfocusEditWpwm)
+	ON_MESSAGE(ON_COM_RECEIVE, OnComRecv)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -169,12 +184,12 @@ BOOL CLaserSettingDlg::OnInitDialog()//窗体初始化函数
 	
 	// TODO: Add extra initialization here
 
-	m_cbCom.SetCurSel(0);
+//	m_cbCom.SetCurSel(0);
 	m_ComLaser.InitCom();
-	
+
 	//m_ListCommad.SetExtendedStyle(LVS_EX_GRIDLINES | LVS_EX_FULLROWSELECT);
 	
-	SetTimer(1,500,NULL);//定义时钟1，时间间隔为500ms
+	SetTimer(1,5000,NULL);//定义时钟1，时间间隔为500ms
 
 	//m_ListCommad.InsertColumn(0,_T("ID"),LVCFMT_LEFT,100);
 	//m_ListCommad.InsertColumn(1,_T("List Command"),LVCFMT_LEFT,250);
@@ -233,18 +248,17 @@ HCURSOR CLaserSettingDlg::OnQueryDragIcon()
 	return (HCURSOR) m_hIcon;
 }
 
-void CLaserSettingDlg::OnButtonComset() 
-{
-	// TODO: Add your control notification handler code here
-	CComConfigDlg	dlg;
-	dlg.DoModal();
-}
+//DEL void CLaserSettingDlg::OnButtonComset() 
+//DEL {
+//DEL 	// TODO: Add your control notification handler code here
+//DEL 	CComConfigDlg	dlg;
+//DEL 	dlg.DoModal();
+//DEL }
 
 void CLaserSettingDlg::OnButtonConnect()
 {
 	// TODO: Add your control notification handler code here
 	UpdateData(TRUE);
-	int nComIndex = m_cbCom.GetCurSel();
 	char strConbuf[256];
 	CString		strConnect;
 	strConnect.Format(_T("%s,%s,%s,%s"),m_ComConfig.strBaudRate,m_ComConfig.strParity,m_ComConfig.strDataBits,m_ComConfig.strStopbits);
@@ -256,7 +270,6 @@ void CLaserSettingDlg::OnButtonConnect()
 		m_nComIndex = nComIndex +1;
 		GetDlgItem(IDC_BUTTON_CANCEL)->EnableWindow(TRUE);
 		GetDlgItem(IDC_BUTTON_SEND)->EnableWindow(TRUE);
-		GetDlgItem(IDC_BUTTON_GET)->EnableWindow(TRUE);
 		GetDlgItem(IDC_BUTTON_CONNECT)->EnableWindow(FALSE);
 		m_ComLaser.SetWnd(m_hWnd); 
 			
@@ -269,11 +282,11 @@ void CLaserSettingDlg::OnButtonConnect()
 		{
 			if( m_strReceive.CompareNoCase("000000") == 0 )
 			{
-				m_bDIOOn = FALSE;
+				m_DIO = FALSE;
 			}
 			else if( m_strReceive.CompareNoCase("000001") == 0  )//Karen 这个函数使用lstrcmpi函数对一个CString和另一个CString进行比较
 			{
-				m_bDIOOn = TRUE;
+				m_DIO = TRUE;
 			}
 			else if( m_strReceive.CompareNoCase("ERROR ") == 0 )
 			{
@@ -287,11 +300,11 @@ void CLaserSettingDlg::OnButtonConnect()
 		{
 			if( m_strReceive.CompareNoCase("000000") == 0 )
 			{
-				m_bQSOn = FALSE;
+				m_ESH = FALSE;
 			}
 			else if( m_strReceive.CompareNoCase("000001") == 0  )
 			{
-				m_bQSOn = TRUE;
+				m_ESH = TRUE;
 			}
 			else if( m_strReceive.CompareNoCase("ERROR ") == 0 )
 			{
@@ -316,7 +329,7 @@ void CLaserSettingDlg::OnButtonCancel()
 	GetDlgItem(IDC_BUTTON_CANCEL)->EnableWindow(FALSE);
 	GetDlgItem(IDC_BUTTON_CONNECT)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BUTTON_SEND)->EnableWindow(FALSE);
-	GetDlgItem(IDC_BUTTON_GET)->EnableWindow(FALSE);
+
 }
 
 LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)
@@ -337,53 +350,122 @@ LRESULT CLaserSettingDlg::OnComRecv(WPARAM wParam, LPARAM lParam)
 
 void CLaserSettingDlg::OnButtonSend()
 {
-}
-
-void CLaserSettingDlg::OnCheckDio() 
-{
 	// TODO: Add your control notification handler code here
 	UpdateData(TRUE);
 	m_ComLaser.ClearOutputBuffer();
 	m_ComLaser.ClearInputBuffer();
 	m_strReceive = _T("");
 
-	if( m_bDIOOn )
-	{
-		//m_ComLaser.Write(_T("DIO=000001\n"));
-		SendCommon(_T("DIO=000001\n"),11);
-	}
-	else
+	CString		strSend;
+
+	char chTemp[11];
+	ZeroMemory(chTemp,11);
+	m_strReceive = _T("");  
+	if( m_bIDIChange )
 	{	
-		//m_ComLaser.Write(_T("DIO=000000\n"));
-		SendCommon(_T("DIO=000000\n"),11);
+		float ntemp = (m_fWIDI * 10.0);
+		longToString(ntemp,chTemp);
+		strSend.Format(_T("IDI=%s\n"),chTemp);
+		//m_ComLaser.Write(strSend);
+		memcpy(chTemp,strSend,11);
+		SendCommon(chTemp,11);
+	
+		m_bIDIChange = FALSE;
+
+		m_waitEvent.Reset();
+		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+		{	
+			//AfxMessageBox(m_strReceive);
+		}
 	}
 	
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+	ZeroMemory(chTemp,11);
+
+	if( m_bPRFChange )
 	{	
-		//AfxMessageBox(m_strReceive);
+		longToString((m_lWPRF*1000),chTemp);
+		strSend.Format(_T("PRF=%s\n"),chTemp);
+		//m_ComLaser.Write(strSend);
+
+		memcpy(chTemp,strSend,11);
+		SendCommon(chTemp,11);
+	
+		m_bPRFChange = FALSE;
+
+		m_waitEvent.Reset();
+		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+		{	
+			//AfxMessageBox(m_strReceive);
+		}
+	}
+
+
+	ZeroMemory(chTemp,11);
+
+	if( m_bPWMChange )
+	{	
+		longToString((420-(long)m_fWPWM*4),chTemp);
+		strSend.Format(_T("PWM=%s\n"),chTemp);
+		//m_ComLaser.Write(strSend);
+
+		memcpy(chTemp,strSend,11);
+		SendCommon(chTemp,11);
+	
+		m_bPWMChange = FALSE;
+
+		m_waitEvent.Reset();
+		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )//等待命令响应完成
+		{	
+			//AfxMessageBox(m_strReceive);
+		}
 	}
 }
 
-void CLaserSettingDlg::OnChangeEditIdi() 
-{
-	// TODO: If this is a RICHEDIT control, the control will not
-	// send this notification unless you override the CDialog::OnInitDialog()
-	// function and call CRichEditCtrl().SetEventMask()
-	// with the ENM_CHANGE flag ORed into the mask.
-	
-	// TODO: Add your control notification handler code here
-}
+//DEL void CLaserSettingDlg::OnCheckDio() 
+//DEL {
+//DEL 	// TODO: Add your control notification handler code here
+//DEL 	UpdateData(TRUE);
+//DEL 	m_ComLaser.ClearOutputBuffer();
+//DEL 	m_ComLaser.ClearInputBuffer();
+//DEL 	m_strReceive = _T("");
+//DEL 
+//DEL 	if( m_DIO )
+//DEL 	{
+//DEL 		//m_ComLaser.Write(_T("DIO=000001\n"));
+//DEL 		SendCommon(_T("DIO=000001\n"),11);
+//DEL 	}
+//DEL 	else
+//DEL 	{	
+//DEL 		//m_ComLaser.Write(_T("DIO=000000\n"));
+//DEL 		SendCommon(_T("DIO=000000\n"),11);
+//DEL 	}
+//DEL 	
+//DEL 	m_waitEvent.Reset();
+//DEL 	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+//DEL 	{	
+//DEL 		//AfxMessageBox(m_strReceive);
+//DEL 	}
+//DEL }
 
-void CLaserSettingDlg::OnChangeEditPrf() 
-{
-	// TODO: If this is a RICHEDIT control, the control will not
-	// send this notification unless you override the CDialog::OnInitDialog()
-	// function and call CRichEditCtrl().SetEventMask()
-	// with the ENM_CHANGE flag ORed into the mask.
-	
-	// TODO: Add your control notification handler code here
-}
+//DEL void CLaserSettingDlg::OnChangeEditIdi() 
+//DEL {
+//DEL 	// TODO: If this is a RICHEDIT control, the control will not
+//DEL 	// send this notification unless you override the CDialog::OnInitDialog()
+//DEL 	// function and call CRichEditCtrl().SetEventMask()
+//DEL 	// with the ENM_CHANGE flag ORed into the mask.
+//DEL 	
+//DEL 	// TODO: Add your control notification handler code here
+//DEL }
+
+//DEL void CLaserSettingDlg::OnChangeEditPrf() 
+//DEL {
+//DEL 	// TODO: If this is a RICHEDIT control, the control will not
+//DEL 	// send this notification unless you override the CDialog::OnInitDialog()
+//DEL 	// function and call CRichEditCtrl().SetEventMask()
+//DEL 	// with the ENM_CHANGE flag ORed into the mask.
+//DEL 	
+//DEL 	// TODO: Add your control notification handler code here
+//DEL }
 void CLaserSettingDlg::longToString(ULONG itemp, char *p)
 {
 	*p = (unsigned char)(itemp >> 20 ) + ZERO;
@@ -460,238 +542,60 @@ void CLaserSettingDlg::GetCom()
     {
         k = ((CComboBox *)GetDlgItem((IDC_COMBO_COM)))->GetCount();
         ((CComboBox *)GetDlgItem(IDC_COMBO_COM))->SetCurSel(k - 1);
-        //mCom.BindCommPort(num);
+        nComIndex=i;
     }
 }
 
 
-void CLaserSettingDlg::OnCheckQs() 
-{
-	// TODO: Add your control notification handler code here
-	UpdateData(TRUE);
-	m_ComLaser.ClearOutputBuffer();
-	m_ComLaser.ClearInputBuffer();
-	m_strReceive = _T("");
+//DEL void CLaserSettingDlg::OnCheckQs() 
+//DEL {
+//DEL 	// TODO: Add your control notification handler code here
+//DEL 	UpdateData(TRUE);
+//DEL 	m_ComLaser.ClearOutputBuffer();
+//DEL 	m_ComLaser.ClearInputBuffer();
+//DEL 	m_strReceive = _T("");
+//DEL 
+//DEL 	if( m_ESH )
+//DEL 	{
+//DEL 		//m_ComLaser.Write(_T("QSW=000001\n"));
+//DEL 		SendCommon(_T("QSW=000001\n"),11);
+//DEL 	}
+//DEL 	else
+//DEL 	{	
+//DEL 		//m_ComLaser.Write(_T("QSW=000000\n"));
+//DEL 		SendCommon(_T("QSW=000000\n"),11);	}
+//DEL 
+//DEL 	m_waitEvent.Reset();
+//DEL 	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+//DEL 	{	
+//DEL 		//AfxMessageBox(m_strReceive);
+//DEL 	}
+//DEL }
 
-	if( m_bQSOn )
-	{
-		//m_ComLaser.Write(_T("QSW=000001\n"));
-		SendCommon(_T("QSW=000001\n"),11);
-	}
-	else
-	{	
-		//m_ComLaser.Write(_T("QSW=000000\n"));
-		SendCommon(_T("QSW=000000\n"),11);	}
-
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
-	{	
-		//AfxMessageBox(m_strReceive);
-	}
-}
-
-void CLaserSettingDlg::OnCheckExt() 
-{
-	// TODO: Add your control notification handler code here
-	UpdateData(TRUE);
-	m_ComLaser.ClearOutputBuffer();
-	m_ComLaser.ClearInputBuffer();
-	m_strReceive = _T("");
-	if( m_bQSEXT )
-	{
-		//m_ComLaser.Write(_T("EXT=000001\n"));
-		SendCommon(_T("EXT=000001\n"),11);
-	}
-	else
-	{	
-		//m_ComLaser.Write(_T("EXT=000000\n"));
-		SendCommon(_T("EXT=000000\n"),11);
-	}
-
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
-	{	
-		//AfxMessageBox(m_strReceive);
-	}
-}
-
-void CLaserSettingDlg::OnButtonGet() 
-{
-	// TODO: Add your control notification handler code here
-	
-	UpdateData(TRUE);
-
-	//DIO
-	m_ComLaser.ClearInputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?DIO\n",5);
-	m_waitEvent.Reset();
-	long  lValue = 0;
-	float  fValue = 0.0;//karen add 2012-02-20
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		lValue = atol(m_strReceive);	
-		m_bDIOOn = (BOOL)lValue;
-	}
-	UpdateData(FALSE);
-	
-	//QSW
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?QSW\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		lValue = atol(m_strReceive);	
-		m_bQSOn = (BOOL)lValue;
-	}
-	UpdateData(FALSE);
-	
-	//EXT
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?EXT\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		lValue = atol(m_strReceive);	
-		m_bQSEXT = (BOOL)lValue;
-	}
-	UpdateData(FALSE);
-	
-	//SHT
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?SHT\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		lValue = atol(m_strReceive);	
-		m_bSHTOn = (BOOL)lValue;
-	}
-	UpdateData(FALSE);
-
-	//IDI
-	char	chTemp[16];
-
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?IDI\n",5);
-	m_waitEvent.Reset();
-	char   bufIDI[6];
-	CString tempbufIDI;
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);	
-		lValue = StringToLong(chTemp);		
-		
-		tempbufIDI.Format(_T("%.1f"),lValue/10.0);        
-        strncpy(bufIDI,(LPCTSTR)tempbufIDI,sizeof(bufIDI));
-		GetDlgItem(IDC_EDIT_IDIVALUE)->SetWindowText(bufIDI);
-	
-	}
-	UpdateData(FALSE);
-
-	//TEV
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?TEV\n",5);	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);	
-		lValue = StringToLong(chTemp);
-		
-		CString tempbufTEV;
-		char bufTEV[6];
-		tempbufTEV.Format(_T("%.1f"),lValue/10.0);
-		strncpy(bufTEV,(LPCTSTR)tempbufTEV,sizeof(bufTEV));
-		GetDlgItem(IDC_EDIT_TEV)->SetWindowText(bufTEV);       
-	}
-	UpdateData(FALSE);
-
-	//TLA
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?TLA\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);	
-		lValue = StringToLong(chTemp);	
-
-		CString tempbufTLA;
-		char bufTLA[6];
-		tempbufTLA.Format(_T("%.1f"),lValue/10.0);
-		strncpy(bufTLA,(LPCTSTR)tempbufTLA,sizeof(bufTLA));
-		GetDlgItem(IDC_EDIT_TLA)->SetWindowText(bufTLA);
-    
-	}
-	UpdateData(FALSE);
-
-	//TDI
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	SendCommon("?TDI\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);	
-		lValue = StringToLong(chTemp);
-        
-		CString tempbufTDI;
-		char bufTDI[6];
-		tempbufTDI.Format(_T("%.1f"),lValue/10.0);
-		strncpy(bufTDI,(LPCTSTR)tempbufTDI,sizeof(bufTDI));
-        GetDlgItem(IDC_EDIT_TDI)->SetWindowText(bufTDI);
-        
-	}
-	UpdateData(FALSE);
-	//karen add 2012-02-20 begin
-
-	//?PRF
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	lValue =0;
-	SendCommon("?PRF\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);	
-		lValue = StringToLong(chTemp);		
-		m_lPRF_QUERY = lValue;
-	}
-	UpdateData(FALSE);
-	
-	//?PWM
-	Sleep(100);
-	m_ComLaser.ClearOutputBuffer();
-	m_strReceive = _T("");
-	lValue =0;
-	SendCommon("?PWM\n",5);
-	m_waitEvent.Reset();
-	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
-	{	
-		ZeroMemory(chTemp,16);
-		memcpy(chTemp,m_strReceive,6);		
-		lValue = StringToLong(chTemp);		
-		m_fPWM_QUERY = lValue;
-	}
-	UpdateData(FALSE);
-	//karen add 2012-02-20 end
-}
+//DEL void CLaserSettingDlg::OnCheckExt() 
+//DEL {
+//DEL 	// TODO: Add your control notification handler code here
+//DEL 	UpdateData(TRUE);
+//DEL 	m_ComLaser.ClearOutputBuffer();
+//DEL 	m_ComLaser.ClearInputBuffer();
+//DEL 	m_strReceive = _T("");
+//DEL 	if( m_ESH )
+//DEL 	{
+//DEL 		//m_ComLaser.Write(_T("EXT=000001\n"));
+//DEL 		SendCommon(_T("EXT=000001\n"),11);
+//DEL 	}
+//DEL 	else
+//DEL 	{	
+//DEL 		//m_ComLaser.Write(_T("EXT=000000\n"));
+//DEL 		SendCommon(_T("EXT=000000\n"),11);
+//DEL 	}
+//DEL 
+//DEL 	m_waitEvent.Reset();
+//DEL 	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+//DEL 	{	
+//DEL 		//AfxMessageBox(m_strReceive);
+//DEL 	}
+//DEL }
 
 
 
@@ -731,13 +635,342 @@ void CLaserSettingDlg::OnChangeEditPwm()
 void CLaserSettingDlg::OnClosedig() 
 {
 	// TODO: Add your control notification handler code here	
+	m_ComLaser.Close();
     ExitProcess(0);
 } 
 
-void CLaserSettingDlg::OnKillfocusEditIdi() 
-{  UpdateData(TRUE);
+
+void CLaserSettingDlg::OnTimer(UINT nIDEvent) 
+{
+	char	chTemp[16];
+	if(m_cButton.EnableWindow() != 0)	
+ {	UpdateData(TRUE);
+	m_cButton.EnableWindow(false);
+	//DIO
+	m_ComLaser.ClearInputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?DIO\n",5);
+	m_waitEvent.Reset();
+	long  lValue = 0;
+	float  fValue = 0.0;//karen add 2012-02-20
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		lValue = atol(m_strReceive);	
+		if ((BOOL)lValue==true)
+		m_CSDIO.SetIcon(m_hIconRED);
+		else
+		m_CSDIO.SetIcon(m_hIconGREEN);
+	}
+	UpdateData(FALSE);
+	
+	//QSW
+	Sleep(10);
+
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?QSW\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		lValue = atol(m_strReceive);
+		if ((BOOL)lValue==true)
+		m_CSQS.SetIcon(m_hIconRED);
+		else
+		m_CSQS.SetIcon(m_hIconGREEN);
+		
+	}
+	UpdateData(FALSE);
+	
+	//EXT
+	Sleep(10);
+
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?EXT\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		lValue = atol(m_strReceive);	
+		if ((BOOL)lValue==true)
+		m_CSQS.SetIcon(m_hIconRED);
+		else
+		m_CSQS.SetIcon(m_hIconGREEN);
+	}
+	UpdateData(FALSE);
+	
+//TK1
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	lValue =0;
+	SendCommon("?TK1\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp)/10;		
+		m_fRSHG = lValue;
+	}
+	UpdateData(FALSE);
+	
+//TK2
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	lValue =0;
+	SendCommon("?TK2\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp)/10;		
+		m_fRTHG = lValue;
+	}
+	UpdateData(FALSE);
+	
+	
+	//TDI
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	lValue =0;
+	SendCommon("?TDI\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp)/10;		
+		m_fRTDI = lValue;
+	}
+	UpdateData(FALSE);
+	
+	//IDI
+
+
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?IDI\n",5);
+	m_waitEvent.Reset();
+	char   bufIDI[6];
+	CString tempbufIDI;
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+			lValue = StringToLong(chTemp)/10;		
+		m_fRIDI = lValue;
+		//lValue = StringToLong(chTemp);		
+		
+		//tempbufIDI.Format(_T("%.1f"),lValue/10.0);        
+        //strncpy(bufIDI,(LPCTSTR)tempbufIDI,sizeof(bufIDI));
+		//GetDlgItem(IDC_EDIT_RIDI)->SetWindowText(bufIDI);
+	
+	}
+	UpdateData(FALSE);
+
+	//TEV
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?TEV\n",5);	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp);
+		
+		CString tempbufTEV;
+		char bufTEV[6];
+		tempbufTEV.Format(_T("%.1f"),lValue/10.0);
+		strncpy(bufTEV,(LPCTSTR)tempbufTEV,sizeof(bufTEV));
+		GetDlgItem(IDC_EDIT_TEV)->SetWindowText(bufTEV);       
+	}
+	UpdateData(FALSE);
+
+	//TLA
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?TLA\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp);	
+
+		CString tempbufTLA;
+		char bufTLA[6];
+		tempbufTLA.Format(_T("%.1f"),lValue/10.0);
+		strncpy(bufTLA,(LPCTSTR)tempbufTLA,sizeof(bufTLA));
+		GetDlgItem(IDC_EDIT_TLA)->SetWindowText(bufTLA);
+    
+	}
+	UpdateData(FALSE);
+
+	//TDI
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	SendCommon("?TDI\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp);
+        
+		CString tempbufTDI;
+		char bufTDI[6];
+		tempbufTDI.Format(_T("%.1f"),lValue/10.0);
+		strncpy(bufTDI,(LPCTSTR)tempbufTDI,sizeof(bufTDI));
+        GetDlgItem(IDC_EDIT_RTDI)->SetWindowText(bufTDI);
+        
+	}
+	UpdateData(FALSE);
+	//karen add 2012-02-20 begin
+
+	//?PRF
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	lValue =0;
+	SendCommon("?PRF\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);	
+		lValue = StringToLong(chTemp)/1000;		
+		m_lRPRF = lValue;
+	}
+	UpdateData(FALSE);
+	
+	//?PWM
+	Sleep(10);
+	ZeroMemory(chTemp,16);
+	m_ComLaser.ClearOutputBuffer();
+	m_strReceive = _T("");
+	lValue =0;
+	SendCommon("?PWM\n",5);
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 1000) == TRUE )
+	{	
+		ZeroMemory(chTemp,16);
+		memcpy(chTemp,m_strReceive,6);		
+		lValue = StringToLong(chTemp);		
+		m_fRPWM = lValue;
+	}
+	UpdateData(FALSE);
+	//karen add 2012-02-20 end
+	}
+	CDialog::OnTimer(nIDEvent);
+	
+}
+
+
+void CLaserSettingDlg::OnSelchangeComboDio() 
+{
 	// TODO: Add your control notification handler code here
-		if ((m_fIDI>=0) && (m_fIDI<=50))
+	UpdateData(TRUE);
+	m_ComLaser.ClearOutputBuffer();
+	m_ComLaser.ClearInputBuffer();
+	m_strReceive = _T("");
+
+	if( m_DIO )
+	{
+		//m_ComLaser.Write(_T("DIO=000001\n"));
+		SendCommon(_T("DIO=000001\n"),11);
+	}
+	else
+	{	
+		//m_ComLaser.Write(_T("DIO=000000\n"));
+		SendCommon(_T("DIO=000000\n"),11);
+	}
+	
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+	{	
+		//AfxMessageBox(m_strReceive);
+	}
+	
+}
+
+void CLaserSettingDlg::OnSelchangeComboEsh() 
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	m_ComLaser.ClearOutputBuffer();
+	m_ComLaser.ClearInputBuffer();
+	m_strReceive = _T("");
+	if( m_ESH)
+	{
+		//m_ComLaser.Write(_T("EXT=000001\n"));
+		SendCommon(_T("EXT=000001\n"),11);
+	}
+	else
+	{	
+		//m_ComLaser.Write(_T("EXT=000000\n"));
+		SendCommon(_T("EXT=000000\n"),11);
+	}
+
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+	{	
+		//AfxMessageBox(m_strReceive);
+	}
+	
+}
+
+void CLaserSettingDlg::OnSelchangeComboQs() 
+{
+	// TODO: Add your control notification handler code here
+		// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	m_ComLaser.ClearOutputBuffer();
+	m_ComLaser.ClearInputBuffer();
+	m_strReceive = _T("");
+
+	if( m_QS )
+	{
+		//m_ComLaser.Write(_T("QSW=000001\n"));
+		SendCommon(_T("QSW=000001\n"),11);
+	
+	}
+	else
+	{	
+		//m_ComLaser.Write(_T("QSW=000000\n"));
+		SendCommon(_T("QSW=000000\n"),11);
+	
+	}
+
+	m_waitEvent.Reset();
+	if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
+	{	
+		//AfxMessageBox(m_strReceive);
+	}
+}
+
+void CLaserSettingDlg::OnKillfocusEditWidi() 
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	// TODO: Add your control notification handler code here
+		if ((m_fWIDI>=0) && (m_fWIDI<=50))
     m_bIDIChange = TRUE;
 	else
 	{
@@ -747,11 +980,13 @@ void CLaserSettingDlg::OnKillfocusEditIdi()
 	UpdateData(FALSE);
 }
 
-void CLaserSettingDlg::OnKillfocusEditPrf() 
-{		UpdateData(TRUE);
+void CLaserSettingDlg::OnKillfocusEditWprf() 
+{
+	// TODO: Add your control notification handler code here
+		UpdateData(TRUE);
 	// TODO: Add your control notification handler code here
 		// TODO: Add your control notification handler code here
-	if ((m_lPRF>=20)&&(m_lPRF<=150))
+	if ((m_lWPRF>=20)&&(m_lWPRF<=150))
 	m_bPRFChange = TRUE;
 	else
 	{m_bPRFChange = FALSE;
@@ -760,88 +995,16 @@ void CLaserSettingDlg::OnKillfocusEditPrf()
 	UpdateData(FALSE);
 }
 
-void CLaserSettingDlg::OnKillfocusEditPwm() 
-{	
+void CLaserSettingDlg::OnKillfocusEditWpwm() 
+{
 	UpdateData(TRUE);
 	// TODO: Add your control notification handler code here
-	if ((m_fPWM>=10)&&(m_fPWM<=100))
+	if ((m_fWPWM>=10)&&(m_fWPWM<=100))
 	m_bPWMChange = TRUE;
 	else
 	{m_bPWMChange = FALSE;
 	AfxMessageBox("PWM 范围应在 10~100");
 	}
 	UpdateData(FALSE);
-}
-
-
-void CLaserSettingDlg::OnTimer(UINT nIDEvent) 
-{
-	// TODO: Add your message handler code here and/or call default
-		UpdateData(TRUE);
-	m_ComLaser.ClearOutputBuffer();
-	m_ComLaser.ClearInputBuffer();
-	m_strReceive = _T("");
-
-	CString		strSend;
-
-	char chTemp[11];
-	ZeroMemory(chTemp,11);
-	m_strReceive = _T("");  
-	if( m_bIDIChange )
-	{	
-		float ntemp = (m_fIDI * 10.0);
-		longToString(ntemp,chTemp);
-		strSend.Format(_T("IDI=%s\n"),chTemp);
-		//m_ComLaser.Write(strSend);
-		memcpy(chTemp,strSend,11);
-		SendCommon(chTemp,11);
-		m_bIDIChange = FALSE;
-
-		m_waitEvent.Reset();
-		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
-		{	
-			//AfxMessageBox(m_strReceive);
-		}
-	}
-	
-	ZeroMemory(chTemp,11);
-
-	if( m_bPRFChange )
-	{	
-		longToString((m_lPRF*1000),chTemp);
-		strSend.Format(_T("PRF=%s\n"),chTemp);
-		//m_ComLaser.Write(strSend);
-
-		memcpy(chTemp,strSend,11);
-		SendCommon(chTemp,11);
-		m_bPRFChange = FALSE;
-
-		m_waitEvent.Reset();
-		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
-		{	
-			//AfxMessageBox(m_strReceive);
-		}
-	}
-
-
-	ZeroMemory(chTemp,11);
-
-	if( m_bPWMChange )
-	{	
-		longToString((420-(long)m_fPWM*4),chTemp);
-		strSend.Format(_T("PWM=%s\n"),chTemp);
-		//m_ComLaser.Write(strSend);
-
-		memcpy(chTemp,strSend,11);
-		SendCommon(chTemp,11);
-		m_bPWMChange = FALSE;
-
-		m_waitEvent.Reset();
-		if( WaitWithMessageLoop(m_waitEvent.GetHANDLE(), 8000) == TRUE )
-		{	
-			//AfxMessageBox(m_strReceive);
-		}
-	}
-	CDialog::OnTimer(nIDEvent);
 	
 }

@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 AFX_COMCONFIGDLG_H__FE0C8339_2C9E_4404_98E5_CCF8CB685B17__INCLUDED_	.\ComConfigDlg.h	2;"	d
+AFX_DLGPASS_H__83340EE1_9281_452C_BC33_4DE14BED0EA9__INCLUDED_	.\DlgPass.h	2;"	d
 AFX_LASERSETTINGDLG_H__B12CFA51_608C_4C06_95A1_911B0EA9A85A__INCLUDED_	.\LaserSettingDlg.h	5;"	d
 AFX_LASERSETTING_H__793C87D9_EB0A_4BAB_BDC0_6211D4D21A6B__INCLUDED_	.\LaserSetting.h	5;"	d
 AFX_STDAFX_H__3E353627_609D_4497_BFAA_3A033552417C__INCLUDED_	.\StdAfx.h	7;"	d
@@ -28,6 +29,8 @@ CComConfigDlg	.\ComConfigDlg.cpp	/^CComConfigDlg::CComConfigDlg(CWnd* pParent \/
 CComConfigDlg	.\ComConfigDlg.h	/^class CComConfigDlg : public CDialog$/;"	c
 CDelphilaserComCommunicate	.\DelphilaserComCommunicate.cpp	/^CDelphilaserComCommunicate::CDelphilaserComCommunicate()$/;"	f	class:CDelphilaserComCommunicate
 CDelphilaserComCommunicate	.\DelphilaserComCommunicate.h	/^class CDelphilaserComCommunicate  $/;"	c
+CDlgPass	.\DlgPass.cpp	/^CDlgPass::CDlgPass(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CDlgPass
+CDlgPass	.\DlgPass.h	/^class CDlgPass : public CDialog$/;"	c
 CLaserSettingApp	.\LaserSetting.cpp	/^CLaserSettingApp::CLaserSettingApp()$/;"	f	class:CLaserSettingApp
 CLaserSettingApp	.\LaserSetting.h	/^class CLaserSettingApp : public CWinApp$/;"	c
 CLaserSettingDlg	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^CLaserSettingDlg::CLaserSettingDlg(CWnd* pParent \/*=NULL*\/)$/;"	f	class:CLaserSettingDlg
@@ -52,6 +55,7 @@ DECLSKINHAPI	.\lasersetting\SkinH.h	21;"	d
 DEFAULT_COM_MASK_EVENT	.\DelphilaserComCommunicate.h	44;"	d
 Destroy	.\DelphilaserComCommunicate.cpp	/^void CDelphilaserComCommunicate::Destroy()$/;"	f	class:CDelphilaserComCommunicate
 DoDataExchange	.\ComConfigDlg.cpp	/^void CComConfigDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CComConfigDlg
+DoDataExchange	.\DlgPass.cpp	/^void CDlgPass::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CDlgPass
 DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
 DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
 DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
@@ -67,6 +71,7 @@ DoDataExchange	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/
 DoDataExchange	.\LaserSettingDlg.cpp	/^void CAboutDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CAboutDlg
 DoDataExchange	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::DoDataExchange(CDataExchange* pDX)$/;"	f	class:CLaserSettingDlg
 EndThread	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::EndThread(DWORD dwWaitTime)$/;"	f	class:CDelphilaserComCommunicate
+GetCom	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::GetCom()$/;"	f	class:CLaserSettingDlg
 GetHANDLE	.\StdAfx.cpp	/^HANDLE CManualResetEvent::GetHANDLE() const$/;"	f	class:CManualResetEvent
 GetHandle	.\DelphilaserComCommunicate.h	/^	HANDLE GetHandle()$/;"	f	class:CDelphilaserComCommunicate
 GetInputSize	.\DelphilaserComCommunicate.h	/^	int GetInputSize()$/;"	f	class:CDelphilaserComCommunicate
@@ -75,56 +80,65 @@ GetPortName	.\DelphilaserComCommunicate.h	/^	const char *GetPortName()$/;"	f	cla
 GetState	.\DelphilaserComCommunicate.h	/^	DCB *GetState()$/;"	f	class:CDelphilaserComCommunicate
 GetThread	.\DelphilaserComCommunicate.h	/^	inline HANDLE GetThread()$/;"	f	class:CDelphilaserComCommunicate
 GetTimeouts	.\DelphilaserComCommunicate.h	/^	LPCOMMTIMEOUTS GetTimeouts(void)$/;"	f	class:CDelphilaserComCommunicate
-IDC_BUTTON2	.\resource.h	47;"	d
-IDC_BUTTON3	.\resource.h	49;"	d
-IDC_BUTTON_APPLY	.\resource.h	26;"	d
-IDC_BUTTON_CANCEL	.\resource.h	16;"	d
-IDC_BUTTON_COMSET	.\resource.h	14;"	d
-IDC_BUTTON_CONNECT	.\resource.h	15;"	d
-IDC_BUTTON_GET	.\resource.h	44;"	d
-IDC_BUTTON_SEND	.\resource.h	25;"	d
-IDC_CHECK2	.\resource.h	19;"	d
-IDC_CHECK3	.\resource.h	21;"	d
-IDC_CHECK4	.\resource.h	23;"	d
-IDC_CHECK_DIO	.\resource.h	11;"	d
-IDC_CHECK_EXT	.\resource.h	22;"	d
-IDC_CHECK_QS	.\resource.h	20;"	d
-IDC_CHECK_SHT	.\resource.h	24;"	d
-IDC_CLOSEDIG	.\resource.h	50;"	d
-IDC_COMBO_BAUDRATE	.\resource.h	28;"	d
-IDC_COMBO_COM	.\resource.h	13;"	d
-IDC_COMBO_DATABITS	.\resource.h	30;"	d
-IDC_COMBO_DATACONTROL	.\resource.h	36;"	d
-IDC_COMBO_PARITY	.\resource.h	32;"	d
-IDC_COMBO_STOPBITS	.\resource.h	34;"	d
-IDC_EDIT2	.\resource.h	48;"	d
-IDC_EDIT_DELAY	.\resource.h	46;"	d
-IDC_EDIT_IDI	.\resource.h	17;"	d
-IDC_EDIT_IDIVALUE	.\resource.h	29;"	d
-IDC_EDIT_PRF	.\resource.h	18;"	d
-IDC_EDIT_PRF2	.\resource.h	39;"	d
-IDC_EDIT_PWM	.\resource.h	27;"	d
-IDC_EDIT_PWM2	.\resource.h	37;"	d
-IDC_EDIT_TDI	.\resource.h	35;"	d
-IDC_EDIT_TEV	.\resource.h	31;"	d
-IDC_EDIT_TLA	.\resource.h	33;"	d
-IDC_LIST_COMMAD	.\resource.h	45;"	d
-IDC_STATIC_BAUDRATE	.\resource.h	38;"	d
-IDC_STATIC_COM	.\resource.h	12;"	d
-IDC_STATIC_DATABITS	.\resource.h	41;"	d
-IDC_STATIC_DATACONTROL	.\resource.h	43;"	d
-IDC_STATIC_PARITY	.\resource.h	40;"	d
-IDC_STATIC_STOPBITS	.\resource.h	42;"	d
+IDC_BUTTON1	.\resource.h	57;"	d
+IDC_BUTTON2	.\resource.h	49;"	d
+IDC_BUTTON3	.\resource.h	51;"	d
+IDC_BUTTON_APPLY	.\resource.h	28;"	d
+IDC_BUTTON_CANCEL	.\resource.h	17;"	d
+IDC_BUTTON_COMSET	.\resource.h	15;"	d
+IDC_BUTTON_CONNECT	.\resource.h	16;"	d
+IDC_BUTTON_GET	.\resource.h	46;"	d
+IDC_BUTTON_SEND	.\resource.h	27;"	d
+IDC_CHECK2	.\resource.h	20;"	d
+IDC_CHECK3	.\resource.h	22;"	d
+IDC_CHECK4	.\resource.h	24;"	d
+IDC_CHECK_DIO	.\resource.h	12;"	d
+IDC_CHECK_EXT	.\resource.h	23;"	d
+IDC_CHECK_QS	.\resource.h	21;"	d
+IDC_CHECK_SHT	.\resource.h	25;"	d
+IDC_CLOSEDIG	.\resource.h	52;"	d
+IDC_COMBO_BAUDRATE	.\resource.h	30;"	d
+IDC_COMBO_COM	.\resource.h	14;"	d
+IDC_COMBO_DATABITS	.\resource.h	32;"	d
+IDC_COMBO_DATACONTROL	.\resource.h	38;"	d
+IDC_COMBO_DIO	.\resource.h	54;"	d
+IDC_COMBO_ESH	.\resource.h	58;"	d
+IDC_COMBO_PARITY	.\resource.h	34;"	d
+IDC_COMBO_QS	.\resource.h	56;"	d
+IDC_COMBO_STOPBITS	.\resource.h	36;"	d
+IDC_EDIT1	.\resource.h	55;"	d
+IDC_EDIT2	.\resource.h	50;"	d
+IDC_EDIT_DELAY	.\resource.h	48;"	d
+IDC_EDIT_IDI	.\resource.h	18;"	d
+IDC_EDIT_IDIVALUE	.\resource.h	31;"	d
+IDC_EDIT_PRF	.\resource.h	19;"	d
+IDC_EDIT_PRF2	.\resource.h	41;"	d
+IDC_EDIT_PRF3	.\resource.h	26;"	d
+IDC_EDIT_PWM	.\resource.h	29;"	d
+IDC_EDIT_PWM2	.\resource.h	39;"	d
+IDC_EDIT_TDI	.\resource.h	37;"	d
+IDC_EDIT_TEV	.\resource.h	33;"	d
+IDC_EDIT_TLA	.\resource.h	35;"	d
+IDC_LIST1	.\resource.h	53;"	d
+IDC_LIST_COMMAD	.\resource.h	47;"	d
+IDC_STATIC_BAUDRATE	.\resource.h	40;"	d
+IDC_STATIC_COM	.\resource.h	13;"	d
+IDC_STATIC_DATABITS	.\resource.h	43;"	d
+IDC_STATIC_DATACONTROL	.\resource.h	45;"	d
+IDC_STATIC_PARITY	.\resource.h	42;"	d
+IDC_STATIC_STOPBITS	.\resource.h	44;"	d
 IDD	.\ComConfigDlg.h	/^	enum { IDD = IDD_DIALOG_COM };$/;"	e	enum:CComConfigDlg::__anon1
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon2	file:
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon3	file:
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon4	file:
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon5	file:
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon6	file:
-IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon7	file:
-IDD	.\LaserSettingDlg.cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon8	file:
-IDD	.\LaserSettingDlg.h	/^	enum { IDD = IDD_LASERSETTING_DIALOG };$/;"	e	enum:CLaserSettingDlg::__anon9
+IDD	.\DlgPass.h	/^	enum { IDD = IDD_DIALOG1 };$/;"	e	enum:CDlgPass::__anon2
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon3	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon4	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon5	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon6	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon7	file:
+IDD	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon8	file:
+IDD	.\LaserSettingDlg.cpp	/^	enum { IDD = IDD_ABOUTBOX };$/;"	e	enum:CAboutDlg::__anon9	file:
+IDD	.\LaserSettingDlg.h	/^	enum { IDD = IDD_LASERSETTING_DIALOG };$/;"	e	enum:CLaserSettingDlg::__anon10
 IDD_ABOUTBOX	.\resource.h	6;"	d
+IDD_DIALOG1	.\resource.h	11;"	d
 IDD_DIALOG_COM	.\resource.h	10;"	d
 IDD_LASERSETTING_DIALOG	.\resource.h	8;"	d
 IDM_ABOUTBOX	.\resource.h	5;"	d
@@ -146,6 +160,7 @@ ON_COM_RING	.\DelphilaserComCommunicate.h	39;"	d
 ON_COM_RLSD	.\DelphilaserComCommunicate.h	40;"	d
 ON_COM_TXEMPTY	.\DelphilaserComCommunicate.h	42;"	d
 OnBreak	.\DelphilaserComCommunicate.h	/^	virtual void OnBreak()$/;"	f	class:CDelphilaserComCommunicate
+OnButton1	.\DlgPass.cpp	/^void CDlgPass::OnButton1() $/;"	f	class:CDlgPass
 OnButtonApply	.\ComConfigDlg.cpp	/^void CComConfigDlg::OnButtonApply() $/;"	f	class:CComConfigDlg
 OnButtonCancel	.\ComConfigDlg.cpp	/^void CComConfigDlg::OnButtonCancel() $/;"	f	class:CComConfigDlg
 OnButtonCancel	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnButtonCancel()$/;"	f	class:CLaserSettingDlg
@@ -232,7 +247,6 @@ OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^voi
 OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
 OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
 OnCheckSht	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
-OnCheckSht	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnCheckSht() $/;"	f	class:CLaserSettingDlg
 OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
 OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
 OnClosedig	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnClosedig() $/;"	f	class:CLaserSettingDlg
@@ -295,6 +309,9 @@ OnQueryDragIcon	.\LaserSettingDlg.cpp	/^HCURSOR CLaserSettingDlg::OnQueryDragIco
 OnRLSD	.\DelphilaserComCommunicate.h	/^	virtual void OnRLSD()$/;"	f	class:CDelphilaserComCommunicate
 OnReceive	.\DelphilaserComCommunicate.h	/^	virtual void OnReceive()\/\/EV_RXCHAR$/;"	f	class:CDelphilaserComCommunicate
 OnRing	.\DelphilaserComCommunicate.h	/^	virtual void OnRing()$/;"	f	class:CDelphilaserComCommunicate
+OnSelchangeComboDio	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnSelchangeComboDio() $/;"	f	class:CLaserSettingDlg
+OnSelchangeComboEsh	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnSelchangeComboEsh() $/;"	f	class:CLaserSettingDlg
+OnSelchangeComboQs	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnSelchangeComboQs() $/;"	f	class:CLaserSettingDlg
 OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
 OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
 OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
@@ -303,6 +320,7 @@ OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^v
 OnSysCommand	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
 OnSysCommand	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnSysCommand(UINT nID, LPARAM lParam)$/;"	f	class:CLaserSettingDlg
 OnTXEmpty	.\DelphilaserComCommunicate.h	/^	virtual void OnTXEmpty()$/;"	f	class:CDelphilaserComCommunicate
+OnTimer	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::OnTimer(UINT nIDEvent) $/;"	f	class:CLaserSettingDlg
 Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort)$/;"	f	class:CDelphilaserComCommunicate
 Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort, char *szSetStr)$/;"	f	class:CDelphilaserComCommunicate
 Open	.\DelphilaserComCommunicate.cpp	/^bool CDelphilaserComCommunicate::Open(DWORD dwPort,DWORD dwBaudRate)$/;"	f	class:CDelphilaserComCommunicate
@@ -361,7 +379,6 @@ SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,42).cpp	/^
 SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
 SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
 SetListCommad	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
-SetListCommad	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::SetListCommad(LPCTSTR strListCmd)\/\/更新列表控件$/;"	f	class:CLaserSettingDlg
 SetMaskEvent	.\DelphilaserComCommunicate.h	/^	void SetMaskEvent(DWORD dwEvent = DEFAULT_COM_MASK_EVENT)$/;"	f	class:CDelphilaserComCommunicate
 SetNotifyNum	.\DelphilaserComCommunicate.h	/^	inline void SetNotifyNum(DWORD dwNum)$/;"	f	class:CDelphilaserComCommunicate
 SetRTS	.\DelphilaserComCommunicate.h	/^	bool SetRTS(bool OnOrOff)$/;"	f	class:CDelphilaserComCommunicate
@@ -381,6 +398,8 @@ StringToLong	.\LaserSettingDlg.cpp	/^unsigned long CLaserSettingDlg::StringToLon
 SuspendThread	.\DelphilaserComCommunicate.h	/^	inline bool SuspendThread()$/;"	f	class:CDelphilaserComCommunicate
 THIS_FILE	.\ComConfigDlg.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
 THIS_FILE	.\ComConfigDlg.cpp	10;"	d	file:
+THIS_FILE	.\DlgPass.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
+THIS_FILE	.\DlgPass.cpp	10;"	d	file:
 THIS_FILE	.\LaserSetting.cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
 THIS_FILE	.\LaserSetting.cpp	10;"	d	file:
 THIS_FILE	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	/^static char THIS_FILE[] = __FILE__;$/;"	v	file:
@@ -524,10 +543,10 @@ ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,01,55).cpp	18;"	d	file
 ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,02,10).cpp	18;"	d	file:
 ZERO	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	18;"	d	file:
 ZERO	.\LaserSettingDlg.cpp	16;"	d	file:
-_APS_NEXT_COMMAND_VALUE	.\resource.h	57;"	d
-_APS_NEXT_CONTROL_VALUE	.\resource.h	58;"	d
-_APS_NEXT_RESOURCE_VALUE	.\resource.h	56;"	d
-_APS_NEXT_SYMED_VALUE	.\resource.h	59;"	d
+_APS_NEXT_COMMAND_VALUE	.\resource.h	65;"	d
+_APS_NEXT_CONTROL_VALUE	.\resource.h	66;"	d
+_APS_NEXT_RESOURCE_VALUE	.\resource.h	64;"	d
+_APS_NEXT_SYMED_VALUE	.\resource.h	67;"	d
 _CO	.\DelphilaserComCommunicate.h	/^	COMMTIMEOUTS _CO;     $/;"	m	class:CDelphilaserComCommunicate
 _DCB	.\DelphilaserComCommunicate.h	/^	DCB _DCB;    $/;"	m	class:CDelphilaserComCommunicate
 _Mutex	.\DelphilaserComCommunicate.h	/^	CRITICAL_SECTION _Mutex;$/;"	m	class:CDelphilaserComCommunicate
@@ -556,7 +575,10 @@ longToString	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-16,22,58).cpp	/^v
 longToString	.\LaserSettingDlg.cpp	/^void CLaserSettingDlg::longToString(ULONG itemp, char *p)$/;"	f	class:CLaserSettingDlg
 m_ComConfig	.\LaserSetting.cpp	/^COMCONFIG	m_ComConfig;$/;"	v
 m_ComLaser	.\LaserSettingDlg.h	/^	CDelphilaserComCommunicate		m_ComLaser;$/;"	m	class:CLaserSettingDlg
+m_DIO	.\LaserSettingDlg.h	/^	int		m_DIO;$/;"	m	class:CLaserSettingDlg
+m_ESH	.\LaserSettingDlg.h	/^	int		m_ESH;$/;"	m	class:CLaserSettingDlg
 m_ListCommad	.\LaserSettingDlg.h	/^	CListCtrl	m_ListCommad;$/;"	m	class:CLaserSettingDlg
+m_QS	.\LaserSettingDlg.h	/^	int		m_QS;$/;"	m	class:CLaserSettingDlg
 m_bDIOOn	.\LaserSettingDlg.h	/^	BOOL	m_bDIOOn;$/;"	m	class:CLaserSettingDlg
 m_bIDIChange	.\LaserSettingDlg.h	/^	BOOL				m_bIDIChange;$/;"	m	class:CLaserSettingDlg
 m_bPRFChange	.\LaserSettingDlg.h	/^	BOOL				m_bPRFChange;$/;"	m	class:CLaserSettingDlg
@@ -565,10 +587,10 @@ m_bQSEXT	.\LaserSettingDlg.h	/^	BOOL	m_bQSEXT;$/;"	m	class:CLaserSettingDlg
 m_bQSOn	.\LaserSettingDlg.h	/^	BOOL	m_bQSOn;$/;"	m	class:CLaserSettingDlg
 m_bSHTOn	.\LaserSettingDlg.h	/^	BOOL	m_bSHTOn;$/;"	m	class:CLaserSettingDlg
 m_cbBaudRate	.\ComConfigDlg.h	/^	CComboBox	m_cbBaudRate;\/\/波特率$/;"	m	class:CComConfigDlg
-m_cbCom	.\LaserSettingDlg.h	/^	CComboBox	m_cbCom;$/;"	m	class:CLaserSettingDlg
 m_cbDataBits	.\ComConfigDlg.h	/^	CComboBox	m_cbDataBits;\/\/数据位$/;"	m	class:CComConfigDlg
 m_cbDataControl	.\ComConfigDlg.h	/^	CComboBox	m_cbDataControl;$/;"	m	class:CComConfigDlg
 m_cbParity	.\ComConfigDlg.h	/^	CComboBox	m_cbParity;$/;"	m	class:CComConfigDlg
+m_cbSH	.\LaserSettingDlg.h	/^	CComboBox	m_cbSH;$/;"	m	class:CLaserSettingDlg
 m_cbStopbits	.\ComConfigDlg.h	/^	CComboBox	m_cbStopbits;\/\/停止位$/;"	m	class:CComConfigDlg
 m_fIDI	.\LaserSettingDlg.h	/^	float	m_fIDI;$/;"	m	class:CLaserSettingDlg
 m_fPWM	.\LaserSettingDlg.h	/^	float	m_fPWM;$/;"	m	class:CLaserSettingDlg
@@ -584,7 +606,9 @@ m_strEventName	.\StdAfx.h	/^	  CString m_strEventName;$/;"	m	class:CManualResetE
 m_strReceive	.\LaserSettingDlg.h	/^	CString				m_strReceive;$/;"	m	class:CLaserSettingDlg
 m_strSend	.\LaserSettingDlg.h	/^	CString	m_strSend;$/;"	m	class:CLaserSettingDlg
 m_waitEvent	.\LaserSettingDlg.h	/^	CManualResetEvent	m_waitEvent;$/;"	m	class:CLaserSettingDlg
+nComIndex	.\LaserSettingDlg.h	/^	int                             nComIndex;$/;"	m	class:CLaserSettingDlg
 new	.\ComConfigDlg.cpp	9;"	d	file:
+new	.\DlgPass.cpp	9;"	d	file:
 new	.\LaserSetting.cpp	9;"	d	file:
 new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-13,54,33).cpp	13;"	d	file:
 new	.\LaserSettingDlg(DL-WS-D3EB23--Admin--2013-04-17-14,00,24).cpp	13;"	d	file:

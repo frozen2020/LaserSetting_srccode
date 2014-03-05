@@ -99,6 +99,10 @@ SOURCE=.\DelphilaserComCommunicate.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\DlgPass.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\LaserSetting.cpp
 # End Source File
 # Begin Source File
@@ -128,6 +132,10 @@ SOURCE=.\DelphilaserComCommunicate.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\DlgPass.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\LaserSetting.h
 # End Source File
 # Begin Source File
@@ -148,11 +156,23 @@ SOURCE=.\StdAfx.h
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 # Begin Source File
 
+SOURCE=.\res\icon1.ico
+# End Source File
+# Begin Source File
+
 SOURCE=.\res\LaserSetting.ico
 # End Source File
 # Begin Source File
 
 SOURCE=.\res\LaserSetting.rc2
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\有底色-红.ico"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\有底色-绿.ico"
 # End Source File
 # End Group
 # Begin Source File

@@ -1,0 +1,44 @@
+target executable E:\tang\LaserSetting_srccode\Release\LaserSetting20k.exe
+
+Relink 4 sections of executable
+SECTION  0(   .text):
++  compressed 16384 -> 7066 bytes
++  encrypting 8192 bytes
++  adding 8192 bytes
+SECTION  1(  .rdata):
++  compressed 8192 -> 2179 bytes
++  encrypting 4096 bytes
++  adding 4096 bytes
+SECTION  2(   .data):
++  encrypting 4096 bytes
++  adding 4096 bytes
+SECTION  3(   .rsrc):
++  adding 8192 bytes
+
+integrate bootstub
+SECTION  4: 73728 bytes
+SECTION  5:  4096 bytes
+SECTION  6: 32768 bytes
+bootstub compressed to 61440 bytes
+set target executable size to 90112 bytes (220% of 40960)
+
+PACKING DEFAULT PACKAGE
+using ZIP compression
+setting compression threshold to 95%
+using strong encryption
++  87K(97.7%) 'SkinH.dll'
++  20K(100.0%) 'skinh.she'
+catalog: 56 bytes
+total: 112200 bytes in 2 files
+
+STATISTICS
+
+size of program     -      28672 bytes
+size of bootstub    -      61440 bytes
+size of box         -     110214 bytes (98.2% of original)
+        total size  -     200326 bytes
+
+exe packing         -          enabled
+exe CRC check       -         disabled
+bootstub            -          release
+SUCCESS

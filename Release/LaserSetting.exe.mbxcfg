@@ -1,0 +1,19 @@
+
+box.encrypt=1
+box.packdefault=1
+box.pattern=*.*
+box.separate=0
+box.ziplevel=1
+dir.addfiles=E:\tang\LaserSetting_srccode\Release
+exe.crc=0
+exe.pack=1
+exe.packedfilesvisible=1
+exe.source=E:\tang\LaserSetting_srccode\Release\LaserSetting.exe
+exe.target=LaserSetting20k.exe
+key.0=C48EF293C30935D13FBD4FB7CDE6C6AF
+key.1=8585179F5AB06351AC320A386F93DA08
+
+box.contents~
+00 SkinH.dll
+00 skinh.she
+~
